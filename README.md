@@ -1,4 +1,4 @@
-# ProyectoSoftwarell
+# ProyectoSoftware_2
 
 Integrantes:
 - Julian David Cruz Cancimance
