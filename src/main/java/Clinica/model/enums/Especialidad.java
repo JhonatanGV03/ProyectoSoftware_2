@@ -1,0 +1,15 @@
+package Clinica.model.enums;
+
+public enum Especialidad {
+    MEDICO_GENERAL,
+    ANOTOMIA_PATOLOGICA,
+    CIRUGIA,
+    PEDIATRIA,
+    OBSTETRICIA_Y_GINECOLOGIA,
+    DERMATOLOGIA,
+    CARDIOLOGIA,
+    NEUROLOGIA,
+    ONCOLOGIA,
+    PSIQUIATRIA
+
+}
