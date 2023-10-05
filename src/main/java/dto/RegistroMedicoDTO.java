@@ -1,14 +1,11 @@
 package dto;
 
-import Clinica.model.enums.Ciudad;
 import Clinica.model.enums.Especialidad;
+import Clinica.model.enums.Ciudad;
 
 import java.util.List;
 
-public record MedicoDTO(
-
-        int codigo,
-
+public record RegistroMedicoDTO(
         String nombre,
         String cedula,
         Ciudad codigoCiudad,
@@ -17,7 +14,9 @@ public record MedicoDTO(
         String correo,
         String password,
         String URLFoto,
+        boolean estado,
         List<HorarioDTO> horarios
-
 ) {
+
+
 }

@@ -5,22 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/AtencionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/CitaDTOAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/HorarioDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/InfoMedicoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/InfoPQRSDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/MedicoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/MedicoDTOAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/PQRSDTOAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/PacienteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/DetalleAtencionMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/DetalleMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/DetallePQRSDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/EmailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemCitaAdminDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemCitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemPQRSDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/NuevaPasswordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/RegistroMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/RegistroRespuestaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/RespuestaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/medico/DiaLibreDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/medico/RegistroAtencionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/DetallePacienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/FiltroBusquedaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroCitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroPQRSDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroPacienteDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/EPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/EPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/AdministradorServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/AdministradorServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/PacienteServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/PacienteServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CitaDTOAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/InfoPQRSDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/MedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/MedicoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PacienteDTO.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +40,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ProyectoSoftware" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +88,8 @@
     "RequestMappingsPanelWidth1": "75",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/manu7/Desktop/Avanzada/ProyectoSoftware_2/src/main/java/dto",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/manu7/Desktop/Avanzada/ProyectoSoftware_2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,6 +134,10 @@
       <workItem from="1695138573921" duration="1970000" />
       <workItem from="1695152165434" duration="3006000" />
       <workItem from="1695156238928" duration="6000" />
+      <workItem from="1695251193773" duration="162000" />
+      <workItem from="1695605990432" duration="68000" />
+      <workItem from="1695854405108" duration="101000" />
+      <workItem from="1696466627853" duration="1532000" />
     </task>
     <servers />
   </component>
