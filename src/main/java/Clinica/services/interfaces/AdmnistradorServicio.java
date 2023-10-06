@@ -1,7 +1,9 @@
 package Clinica.services.interfaces;
 
 import Clinica.model.enums.EstadoPQRS;
-import dto.*;
+import Clinica.dto.administrador.*;
+import Clinica.dto.ItemPQRSDTO;
+import Clinica.dto.RegistroRespuestaDTO;
 
 import java.util.List;
 
@@ -9,17 +11,17 @@ public interface AdmnistradorServicio {
 
     int crearMedico(RegistroMedicoDTO medico) throws Exception;
 
-    int actualizarMedico(MedicoDTO medico) throws Exception;
+    int actualizarMedico(DetallesMedicoDTO medico) throws Exception;
 
     void eliminarMedico(int codigo) throws Exception;
 
     List<ItemMedicoDTO> listarMedicos() throws Exception;
 
-    DetalleMedicoDTO obtenerMedico(int codigo) throws Exception;
+    DetallesMedicoDTO obtenerMedico(int codigo) throws Exception;
 
     List<ItemPQRSDTO> listarPQRS() throws Exception;
 
-    DetallePQRSDTO verDetallePQRS(int codigo) throws Exception;
+    DetallesPQRSDTO verDetallePQRS(int codigo) throws Exception;
 
     int responderPQRS(RegistroRespuestaDTO registroRespuestaDTO) throws  Exception;
 

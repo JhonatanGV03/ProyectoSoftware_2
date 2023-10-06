@@ -4,32 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/DetalleAtencionMedicoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/DetalleMedicoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/DetallePQRSDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/EmailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemCitaAdminDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemCitaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemMedicoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ItemPQRSDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/NuevaPasswordDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/RegistroMedicoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/RegistroRespuestaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/RespuestaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/medico/DiaLibreDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/medico/RegistroAtencionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/DetallePacienteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/FiltroBusquedaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroCitaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroPQRSDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroPacienteDTO.java" afterDir="false" />
+    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Se crearon los servicios para registrar un paciente">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p__m___Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p_ m__[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2023_10_47_p__m___Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2023_10_47_p_ m__[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/EmailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/HorarioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/ItemPQRSDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/NewPasswordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/RegistroRespuestaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/RespuestaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/DetallesMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/DetallesPQRSDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/ItemCitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/ItemMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/RegistroMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/DiaLibreDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/ItemCitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/ItemCitaHistorialDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/ItemCitaRealizadaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/RegistroAtencionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallesCitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallesPQRSDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/ItemCitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroCitaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroPQRSDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Clinica/test/PacienteServicioTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CitaDTOAdmin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/InfoPQRSDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/MedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/MedicoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PacienteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/repositorios/CitaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/CitaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/repositorios/CuentaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/CuentaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/repositorios/HorarioRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/HorarioRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/repositorios/MedicoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/MedicoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/repositorios/MensajeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/MensajeRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/repositorios/PQRSRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/PQRSRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/AdministradorSerivicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/AdministradorSerivicioImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/AdmnistradorServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/AdmnistradorServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/EmailServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/EmailServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/MedicoServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/MedicoServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/PacienteServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/PacienteServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/DetalleAtencionMedicoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/DetalleMedicoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/DetallePQRSDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/EmailDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/HorarioDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/InfoMedicoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ItemCitaAdminDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ItemCitaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ItemMedicoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ItemPQRSDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/LoginDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/MedicoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/MedicoDTOAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/NuevaPasswordDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PQRSDTOAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/RegistroMedicoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/RegistroRespuestaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/RespuestaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/medico/DiaLibreDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/medico/RegistroAtencionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/paciente/DetallePacienteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/paciente/FiltroBusquedaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/FiltroBusquedaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroCitaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroPQRSDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/paciente/RegistroPacienteDTO.java" beforeDir="false" />
+    </list>
+    <list id="43901321-8be7-4800-99a7-86a9ef2a4035" name="Changes by manu7" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/PacienteRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/PacienteServicioImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,29 +86,13 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProyectoSoftware" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,7 +118,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/manu7/Desktop/Avanzada/ProyectoSoftware_2",
+    "last_opened_file_path": "C:/Users/albed/Documents/ProyectosProgramacion/IntelliJProjects/ProyectoSoftware/src/main/java/Clinica",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,8 +130,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\manu7\Desktop\Avanzada\ProyectoSoftware_2\src\main\java\dto" />
       <recent name="C:\Users\albed\Documents\ProyectosProgramacion\IntelliJProjects\ProyectoSoftware\src\main\java\Clinica" />
+      <recent name="C:\Users\manu7\Desktop\Avanzada\ProyectoSoftware_2\src\main\java\dto" />
       <recent name="C:\Users\albed\Documents\ProyectosProgramacion\IntelliJProjects\ProyectoSoftware\src\main\java\Clinica\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -114,7 +143,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.PacienteServicioTest.testPacienteServicio">
+    <configuration name="PacienteServicioTest.testPacienteServicio" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Clinica.test.PacienteServicioTest.testPacienteServicio&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ProyectoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ProyectoSoftware.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="Clinica.ProyectoApplication" />
@@ -122,6 +174,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PacienteServicioTest.testPacienteServicio" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -134,10 +191,7 @@
       <workItem from="1695138573921" duration="1970000" />
       <workItem from="1695152165434" duration="3006000" />
       <workItem from="1695156238928" duration="6000" />
-      <workItem from="1695251193773" duration="162000" />
-      <workItem from="1695605990432" duration="68000" />
-      <workItem from="1695854405108" duration="101000" />
-      <workItem from="1696466627853" duration="1532000" />
+      <workItem from="1696515421268" duration="5986000" />
     </task>
     <servers />
   </component>
@@ -154,5 +208,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se crearon los servicios para registrar un paciente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crearon los servicios para registrar un paciente" />
   </component>
 </project>

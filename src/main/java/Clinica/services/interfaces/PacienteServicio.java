@@ -1,41 +1,39 @@
-package Clinica.services.interfaces;
+    package Clinica.services.interfaces;
 
-import dto.*;
-import dto.paciente.*;
+    import Clinica.dto.paciente.DetallePacienteDTO;
+    import Clinica.dto.paciente.RegistroPacienteDTO;
 
-import java.util.List;
+    public interface PacienteServicio {
 
-public interface PacienteServicio {
-
-    int registrarse(RegistroPacienteDTO registroPacienteDTO) throws Exception;
-    int editarPerfil(int codigoPaciente, RegistroPacienteDTO registroPacienteDTO) throws Exception;
-    int eliminarCuenta(int codigoPaciente) throws Exception;
-    DetallePacienteDTO verDetallePaciente(int codigo) throws Exception;
-    void enviarLinkRecuperacion(String email)throws Exception;
-    void cambiarPassword(NuevaPasswordDTO nuevaPasswordDTO) throws Exception;
-    int agendarCita(RegistroCitaDTO registroCitaDTO) throws Exception;
-    int crearPQRS(RegistroPQRSDTO registroPQRSDTO) throws Exception;
+        int registrarse(RegistroPacienteDTO registroPacienteDTO) throws Exception;
+        boolean editarPerfil(int codigoPaciente, DetallePacienteDTO detallePacienteDTO) throws Exception;
+        boolean eliminarCuenta(int codigoPaciente) throws Exception;
+    //   DetallePacienteDTO verDetallePaciente(int codigo) throws Exception;
+    //   void enviarLinkRecuperacion(String email)throws Exception;
+    //   void cambiarPassword(NuevaPasswordDTO nuevaPasswordDTO) throws Exception;
+    //   int agendarCita(RegistroCitaDTO registroCitaDTO) throws Exception;
+    //   int crearPQRS(RegistroPQRSDTO registroPQRSDTO) throws Exception;
 
 
-    List<ItemPQRSDTO> listarPQRSPciente(int codigoPciente) throws Exception;
+        //List<ItemPQRSDTO> listarPQRSPciente(int codigoPciente) throws Exception;
 
-    DetallePQRSDTO verDetallePQRS (int codigo) throws Exception;
+        //DetallesPQRSDTO verDetallePQRS (int codigo) throws Exception;
 
-    int responderPQRS(RegistroRespuestaDTO registroRespuestaDTO) throws Exception;
+        //int responderPQRS(RegistroRespuestaDTO registroRespuestaDTO) throws Exception;
 
-    List<ItemCitaDTO> listarCitasPaciente(int codigoPaciente) throws Exception;
+        //List<ItemCitaDTO> listarCitasPaciente(int codigoPaciente) throws Exception;
 
-    void filtrarCitas(FiltroBusquedaDTO filtroBusquedaDTO) throws Exception;
-    DetalleAtencionMedicoDTO verDetalleCita(int codigoCita) throws Exception;
+        //void filtrarCitas(FiltroBusquedaDTO filtroBusquedaDTO) throws Exception;
+        //DetallesAtencionMedicoDTO verDetalleCita(int codigoCita) throws Exception;
 
-    //-----------OJITO
+        //-----------OJITO
 
-    void listarPQRSPaciente() throws Exception;
-    void responderPQRS() throws Exception;
-    void listarCitasPaciente() throws Exception;
-    void filtrarCitasPorFecha() throws Exception;
-    void filtrarCitasPorMedico() throws Exception;
-    void verDetalleCita() throws Exception;
+        //void listarPQRSPaciente() throws Exception;
+        //void responderPQRS() throws Exception;
+        //void listarCitasPaciente() throws Exception;
+        //void filtrarCitasPorFecha() throws Exception;
+        //void filtrarCitasPorMedico() throws Exception;
+        //void verDetalleCita() throws Exception;
 
 
-}
+    }

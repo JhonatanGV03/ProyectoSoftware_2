@@ -1,7 +1,7 @@
 package Clinica.services.interfaces;
 
 
-import dto.EmailDTO;
+import Clinica.dto.EmailDTO;
 
 
 public interface EmailServicio {

@@ -1,17 +1,16 @@
 package Clinica.services.impl;
 
-import Clinica.model.classes.*;
 import Clinica.model.enums.EstadoPQRS;
-import Clinica.model.repositorios.*;
+import Clinica.repositorios.*;
 import Clinica.services.interfaces.AdmnistradorServicio;
-import dto.*;
+import Clinica.dto.administrador.*;
+import Clinica.dto.ItemPQRSDTO;
+import Clinica.dto.RegistroRespuestaDTO;
+import Clinica.repositorios.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -32,7 +31,7 @@ public class AdministradorSerivicioImpl implements AdmnistradorServicio {
     }
 
     @Override
-    public int actualizarMedico(MedicoDTO medico) throws Exception {
+    public int actualizarMedico(DetallesMedicoDTO medico) throws Exception {
         return 0;
     }
 
@@ -47,7 +46,7 @@ public class AdministradorSerivicioImpl implements AdmnistradorServicio {
     }
 
     @Override
-    public DetalleMedicoDTO obtenerMedico(int codigo) throws Exception {
+    public DetallesMedicoDTO obtenerMedico(int codigo) throws Exception {
         return null;
     }
 
@@ -57,7 +56,7 @@ public class AdministradorSerivicioImpl implements AdmnistradorServicio {
     }
 
     @Override
-    public DetallePQRSDTO verDetallePQRS(int codigo) throws Exception {
+    public DetallesPQRSDTO verDetallePQRS(int codigo) throws Exception {
         return null;
     }
 
