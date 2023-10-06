@@ -1,24 +1,19 @@
 package Clinica.model.enums;
 
 public enum EPS {
-    SURA("Sura"),
-    COOMEVA("Coomeva"),
-    SANITAS("Sanitas"),
-    NUEVA_EPS("Nueva EPS"),
-    ALIANSALUD(" Aliansalud"),
-    MEDIMAS("Medimas"),
-    SALUD_TOTAL("Salud Total"),
-    FAMISANAR("Famisanar"),
-    COMPENSAR("Compensar"),
-    COMFENALCO("Comfenalco");
+    SURA("SURA"),
+    COOMEVA("COOMEVA"),
+    SANITAS("SANITAS"),
+    NUEVA_EPS("NUEVA EPS"),
+    ALIANSALUD("ALIANSALUD"),
+    MEDIMAS("MEDIMAS"),
+    SALUD_TOTAL("SALUD TOTAL"),
+    FAMISANAR("FAMISANAR"),
+    COMPENSAR("COMPENSAR"),
+    COMFENALCO("COMFENALCO");
 
     private String nombre;
-
-    EPS(String nombre){
+    EPS(String nombre) {
         this.nombre = nombre;
     }
-
-    public String getNombre() {
-        return nombre;
-    }
-}
+ }

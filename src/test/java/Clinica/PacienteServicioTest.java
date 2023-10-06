@@ -1,13 +1,14 @@
-package Clinica.test;
+package Clinica;
 
 import Clinica.dto.paciente.RegistroPacienteDTO;
 import Clinica.model.enums.Ciudad;
 import Clinica.model.enums.EPS;
 import Clinica.model.enums.TipoSangre;
 import Clinica.services.interfaces.PacienteServicio;
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
@@ -18,7 +19,7 @@ public class PacienteServicioTest {
      private PacienteServicio pacienteServicio;
 
      @Test
-     public void testPacienteServicio() {
+     public void testPacienteServicio() throws Exception {
 
          RegistroPacienteDTO pacienteDTO = new RegistroPacienteDTO(
                  "1097222222",
@@ -33,12 +34,10 @@ public class PacienteServicioTest {
                  TipoSangre.A_POSITIVO,
                  "SUASASDSA"
          );
-         try {
+
 
              int nuevo = pacienteServicio.registrarse(pacienteDTO);
 
-         } catch (Exception e) {
-            e.printStackTrace();
-         }
+
      }
 }

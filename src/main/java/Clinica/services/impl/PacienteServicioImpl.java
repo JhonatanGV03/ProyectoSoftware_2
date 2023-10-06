@@ -47,7 +47,7 @@ public class    PacienteServicioImpl implements PacienteServicio {
     }
 
     private boolean estaRepetidaCedula_Y_Correo(String cedula, String email) {
-        return pacienteRepo.existsByDniAndEmail(cedula, email);
+        return pacienteRepo.findByDniAndEmail(cedula, email);
     }
 
     @Override

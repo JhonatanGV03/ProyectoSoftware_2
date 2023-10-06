@@ -1,8 +1,13 @@
 package Clinica.model.enums;
 
 public enum EstadoPQRS {
-    NUEVO,
-    EN_PROCESO,
-    RESUELTO,
-    ARCHIVADO
+    NUEVO("Nuevo"),
+    EN_PROCESO("En proceso"),
+    RESUELTO("Resuelto"),
+    ARCHIVADO("Archivado");
+
+    private String estado;
+    EstadoPQRS(String estado) {
+        this.estado = estado;
+    }
 }

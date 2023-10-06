@@ -35,7 +35,7 @@ public interface PacienteRepo extends JpaRepository<Paciente, Integer> {
 
         boolean existsByCodigoPacienteAndEmailAndPassword(int codigoPaciente, String email, String password);
 
-        boolean existsByDniAndEmail(String dni, String email);
+        boolean findByDniAndEmail(String dni, String email);
 
         boolean existsByDniAndEmailAndPassword(String dni, String email, String password);
 
