@@ -1,6 +1,5 @@
 package Clinica.model.classes;
 import Clinica.model.enums.Especialidad;
-import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
@@ -20,8 +19,8 @@ import java.util.List;
 @Setter
 public class Medico extends Usuario implements Serializable {
     //Enums
-    @Column(nullable = false)
     private Especialidad codigoEspecialidad;
+
     //Relaciones
     @OneToMany(mappedBy="codigoMedico")
     private List<Horario> horarios;

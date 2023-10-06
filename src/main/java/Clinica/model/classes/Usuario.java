@@ -2,6 +2,7 @@ package Clinica.model.classes;
 
 import Clinica.model.enums.Ciudad;
 import Clinica.model.enums.EstadoUsuario;
+import jakarta.persistence.Column;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.MappedSuperclass;
@@ -20,14 +21,15 @@ import java.io.Serializable;
 @Setter
 public class Usuario extends Cuenta implements Serializable {
     //Atributos
-    //@Column(name="x")
+    @Column(nullable = false, length = 15, unique = true)
     private String cedula;
-    //@Column(name="x")
+    @Column(nullable = false, length = 40)
     private String nombre;
-    //@Column(name="x")
+    @Column(nullable = false)
     private int telefono;
-    //@Column(name="x")
+    @Column(nullable = false)
     private String urlFoto;
+
     //Enums
     private Ciudad codigoCiudad;
     private EstadoUsuario estadoCuenta;

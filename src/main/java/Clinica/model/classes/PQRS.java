@@ -1,7 +1,7 @@
 package Clinica.model.classes;
 
-import Clinica.model.enums.EstadoPQRS;
-import Clinica.model.enums.TipoPQRS;
+import ProyectoFinal.model.enums.EstadoPQRS;
+import ProyectoFinal.model.enums.TipoPQRS;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,16 +20,20 @@ import java.util.List;
 public class PQRS implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@Column(name="x")
+    @Column(nullable = false, unique = true)
     private int codigoPQRS;
+
     //Atributos
-    //@Column(name="x")
+    @Column(nullable = false)
     private LocalDateTime fechaCreacion;
+
     //Enums
     private TipoPQRS tipoPQRS;
     private EstadoPQRS codigoEstado;
+
     //Relacion Clases
     @ManyToOne
+    @JoinColumn(nullable = false)
     private Cita codigoCita;
     @OneToMany(mappedBy="codigoPQRS")
     private List<Mensaje> mensajes;

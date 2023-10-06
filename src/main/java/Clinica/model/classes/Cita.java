@@ -20,25 +20,31 @@ public class Cita implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@Column(name="x")
+    @Column(nullable = false)
     private int codigoCita;
     //Atributos
-    //@Column(name="x")
+    @Column(nullable = false)
     private LocalDateTime fechaCreacion;
-    //@Column(name="x")
+    @Column(nullable = false)
     private LocalDateTime fechaCita;
-    //@Column(name="x")
+    @Column(nullable = false, length = 150)
     private String motivo;
+
     //Enums
     private EstadoCita estadoCita;
+
     //Relaciones
     @ManyToOne
+    @JoinColumn(nullable = false, unique = true)
     private Paciente codigoPaciente;
     @ManyToOne
+    @JoinColumn(nullable = false, unique = true)
     private Medico codigoMedico;
     @OneToOne(mappedBy="codigoCita")
+    @JoinColumn(nullable = false)
     private Consulta consulta;
     @OneToOne
+    @JoinColumn(nullable = false)
     private RegistroRecordatorio registroRecordatorio;
     @OneToMany(mappedBy="codigoCita")
     private List<PQRS> PQRS;

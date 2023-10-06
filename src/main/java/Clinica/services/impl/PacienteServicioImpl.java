@@ -9,9 +9,11 @@ import Clinica.services.interfaces.PacienteServicio;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
-public class    PacienteServicioImpl implements PacienteServicio {
+public class   PacienteServicioImpl implements PacienteServicio {
 
     private final PacienteRepo pacienteRepo;
 
@@ -19,8 +21,11 @@ public class    PacienteServicioImpl implements PacienteServicio {
     @Override
     public int registrarse(RegistroPacienteDTO registroPacienteDTO) throws Exception {
 
-        if(estaRepetidaCedula_Y_Correo(registroPacienteDTO.cedula(), registroPacienteDTO.email())){
-            throw new Exception("La cedula o el Correo ya se encuentran en uso");
+        if(estaRepetidaCedula(registroPacienteDTO.cedula())){
+            throw new Exception("La cedula ya se encuentra en uso");
+        }
+        if(estaRepetidaCorreo(registroPacienteDTO.email())){
+            throw new Exception("El correo ya se encuentra en uso");
         }
 
         Paciente paciente = new Paciente();
@@ -35,7 +40,7 @@ public class    PacienteServicioImpl implements PacienteServicio {
         paciente.setEstadoCuenta(EstadoUsuario.ACTIVO);
 
         paciente.setFechaNacimiento(registroPacienteDTO.fechaNacimiento());
-        paciente.setAlergias(registroPacienteDTO.alergias());
+        paciente.setAlegias(registroPacienteDTO.alergias());
         paciente.setCodigoEPS(registroPacienteDTO.eps());
         paciente.setCodigoTipoSangre(registroPacienteDTO.tipoSangre());
 
@@ -46,17 +51,57 @@ public class    PacienteServicioImpl implements PacienteServicio {
         return pacienteNuevo.getCodigoCuenta();
     }
 
-    private boolean estaRepetidaCedula_Y_Correo(String cedula, String email) {
-        return pacienteRepo.findByDniAndEmail(cedula, email);
+    private boolean estaRepetidaCedula(String cedula) {
+        return pacienteRepo.findByDni(cedula) != null;
+    }
+    private boolean estaRepetidaCorreo(String email) {
+        return pacienteRepo.findByEmail(email) != null;
     }
 
     @Override
-    public boolean editarPerfil(int codigoPaciente, DetallePacienteDTO detallePacienteDTO) throws Exception {
-        return false;
+    public int editarPerfil(int codigoPaciente, DetallePacienteDTO detallePacienteDTO) throws Exception {
+
+        Optional<Paciente> buscado = pacienteRepo.findById(detallePacienteDTO.codigo());
+
+        if (buscado.isEmpty()){
+            throw new Exception("El codigo" + detallePacienteDTO.cedula() + " no existe.");
+        }
+
+        Paciente paciente = buscado.get();
+        paciente.setCorreo(detallePacienteDTO.email());
+
+
+        paciente.setCedula(detallePacienteDTO.cedula());
+        paciente.setNombre(detallePacienteDTO.nombre());
+        paciente.setTelefono(detallePacienteDTO.telefono());
+        paciente.setUrlFoto(detallePacienteDTO.urlFoto());
+        paciente.setCodigoCiudad(detallePacienteDTO.ciudad());
+        paciente.setEstadoCuenta(EstadoUsuario.ACTIVO);
+
+        paciente.setFechaNacimiento(detallePacienteDTO.fechaNacimiento());
+        paciente.setAlegias(detallePacienteDTO.alergias());
+        paciente.setCodigoEPS(detallePacienteDTO.eps());
+        paciente.setCodigoTipoSangre(detallePacienteDTO.tipoSangre());
+
+        Paciente pacienteNuevo = pacienteRepo.save(paciente);
+
+
+        return pacienteNuevo.getCodigoCuenta();
     }
 
     @Override
     public boolean eliminarCuenta(int codigoPaciente) throws Exception {
-        return false;
+
+        Optional<Paciente> opcional =pacienteRepo.findById(codigoPaciente);
+
+        if( opcional.isEmpty() ){
+            throw new Exception("No existe el paciente con el código "+codigoPaciente);
+        }
+
+        Paciente buscado = opcional.get();
+        buscado.setEstadoCuenta(EstadoUsuario.INACTIVO);
+        pacienteRepo.save( buscado );
+
+        return true;
     }
 }

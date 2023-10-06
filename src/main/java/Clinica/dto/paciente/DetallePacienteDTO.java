@@ -6,9 +6,13 @@ import Clinica.model.enums.TipoSangre;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public record DetallePacienteDTO(
+        @NotNull
+        int codigo,
+
         @NotNull
         String cedula,
         @NotNull @Email
@@ -20,7 +24,7 @@ public record DetallePacienteDTO(
         @NotNull
         Ciudad ciudad,
         @NotNull
-        Date fechaNacimiento,
+        LocalDateTime fechaNacimiento,
         @NotNull
         String alergias,
         @NotNull
@@ -29,6 +33,7 @@ public record DetallePacienteDTO(
         TipoSangre tipoSangre,
         @NotNull
         String urlFoto
+
 
 ) {
 }

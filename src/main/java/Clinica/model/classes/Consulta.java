@@ -16,16 +16,19 @@ import java.io.Serializable;
 public class Consulta implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@Column(name="x")
+    @Column(nullable = false, unique = true)
     private int codigoConsulta;
+
     //Atributos
-    //@Column(name="x")
+    @Column(nullable = false, length = 150)
     private String sintomas;
-    //@Column(name="x")
+    @Column(nullable = false, length = 250)
     private String diagnostico;
-    //@Column(name="x")
+    @Column(nullable = false, length = 250)
     private String tratamiento;
+
     //Relaciones
     @OneToOne
+    @JoinColumn(nullable = false)
     private Cita codigoCita;
 }

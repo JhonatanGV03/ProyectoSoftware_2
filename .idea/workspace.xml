@@ -4,14 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Se crearon los servicios para registrar un paciente">
+    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Modificacion de los enums">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/ProyectoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Cita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Cita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Consulta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Disponibilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Disponibilidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Horario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Horario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Medico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/PQRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/PQRS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/RegistroRecordatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/RegistroRecordatorio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/PacienteRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/PacienteRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/PacienteServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/PacienteServicioImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clinica/test/PacienteServicioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clinica/PacienteServicioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Clinica/PacienteServicioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clinica/PacienteServicioTest.java" afterDir="false" />
     </list>
     <list id="43901321-8be7-4800-99a7-86a9ef2a4035" name="Changes by manu7" comment="">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/PacienteServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/PacienteServicioImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/PacienteServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/PacienteServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Clinica/PacienteServicioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Clinica/PacienteServicioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +80,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/test/java/Clinica/PacienteServicioTest.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="43901321-8be7-4800-99a7-86a9ef2a4035" />
+        <range start1="9" end1="9" start2="10" end2="11" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="21" end1="22" start2="23" end2="24" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="23" end1="23" start2="25" end2="26" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="39" end1="39" start2="42" end2="44" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="42" end1="42" start2="47" end2="78" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+      </ranges>
+    </file>
     <file path="$PROJECT_DIR$/src/main/java/Clinica/services/impl/PacienteServicioImpl.java">
       <ranges>
-        <range start1="13" end1="14" start2="13" end2="14" changelist="43901321-8be7-4800-99a7-86a9ef2a4035" />
-        <range start1="49" end1="50" start2="49" end2="50" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="10" end1="10" start2="10" end2="12" changelist="43901321-8be7-4800-99a7-86a9ef2a4035" />
+        <range start1="13" end1="14" start2="15" end2="16" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="21" end1="23" start2="23" end2="28" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="37" end1="38" start2="42" end2="43" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="48" end1="50" start2="53" end2="58" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="53" end1="55" start2="61" end2="89" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
+        <range start1="59" end1="60" start2="93" end2="105" changelist="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" />
       </ranges>
     </file>
   </component>
@@ -94,6 +127,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "2d5893c827cecc7c6808cedf3d6b0b67",
     "vue.rearranger.settings.migration": "true"
   }
@@ -101,8 +137,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\albed\Documents\ProyectosProgramacion\IntelliJProjects\ProyectoSoftware\src\main\java\Clinica" />
-      <recent name="C:\Users\manu7\Desktop\Avanzada\ProyectoSoftware_2\src\main\java\dto" />
       <recent name="C:\Users\albed\Documents\ProyectosProgramacion\IntelliJProjects\ProyectoSoftware\src\main\java\Clinica\model" />
+      <recent name="C:\Users\albed\Documents\ProyectosProgramacion\IntelliJProjects\ProyectoSoftware\src\main\java\Clinica\model\enums" />
+      <recent name="C:\Users\manu7\Desktop\Avanzada\ProyectoSoftware_2\src\main\java\dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\manu7\Desktop\Avanzada\ProyectoSoftware_2\src\main\resources\static" />
@@ -237,9 +274,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PacienteServicioTest.testPacienteServicio" />
+        <item itemvalue="Gradle.PacienteServicioTest" />
         <item itemvalue="Gradle.PatientServiceTest" />
         <item itemvalue="Gradle.PacienteServicioTest (1)" />
-        <item itemvalue="Gradle.PacienteServicioTest" />
         <item itemvalue="Gradle.Tests in 'ProyectoSoftware.test'" />
       </list>
     </recent_temporary>
@@ -255,8 +292,16 @@
       <workItem from="1695138573921" duration="1970000" />
       <workItem from="1695152165434" duration="3006000" />
       <workItem from="1695156238928" duration="6000" />
-      <workItem from="1696515421268" duration="7934000" />
+      <workItem from="1696515421268" duration="12302000" />
     </task>
+    <task id="LOCAL-00001" summary="Modificacion de los enums">
+      <created>1696564688987</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696564688987</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +320,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se crearon los servicios para registrar un paciente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crearon los servicios para registrar un paciente" />
+    <MESSAGE value="Modificacion de los enums" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificacion de los enums" />
   </component>
 </project>

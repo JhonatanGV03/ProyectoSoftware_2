@@ -1,6 +1,6 @@
 package Clinica.model.classes;
 
-import Clinica.model.enums.EstadoRecordatorio;
+import ProyectoFinal.model.enums.EstadoRecordatorio;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,14 +18,18 @@ import java.time.LocalDateTime;
 public class RegistroRecordatorio implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //@Column(name="x")
+    @Column(nullable = false, unique = true)
     private int codigoRecordatorio;
+
     //Atributos
-    //@Column(name="x")
+    @Column(nullable = false)
     private LocalDateTime fechaEnvio;
+
     //Enums
     private EstadoRecordatorio codigoEstado;
+
     //Relaciones
     @OneToOne(mappedBy = "registroRecordatorio")
+    @JoinColumn(nullable = false)
     private Cita cita;
 }

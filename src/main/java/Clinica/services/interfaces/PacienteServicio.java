@@ -6,7 +6,7 @@
     public interface PacienteServicio {
 
         int registrarse(RegistroPacienteDTO registroPacienteDTO) throws Exception;
-        boolean editarPerfil(int codigoPaciente, DetallePacienteDTO detallePacienteDTO) throws Exception;
+        int editarPerfil(int codigoPaciente, DetallePacienteDTO detallePacienteDTO) throws Exception;
         boolean eliminarCuenta(int codigoPaciente) throws Exception;
     //   DetallePacienteDTO verDetallePaciente(int codigo) throws Exception;
     //   void enviarLinkRecuperacion(String email)throws Exception;

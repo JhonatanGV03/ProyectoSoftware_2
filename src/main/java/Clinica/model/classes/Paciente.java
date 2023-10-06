@@ -2,7 +2,12 @@ package Clinica.model.classes;
 
 import Clinica.model.enums.EPS;
 import Clinica.model.enums.TipoSangre;
-import jakarta.persistence.*;
+import Clinica.model.enums.EPS;
+import Clinica.model.enums.TipoSangre;
+import jakarta.persistence.Column;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,6 +15,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -20,21 +26,16 @@ import java.util.List;
 @Setter
 public class Paciente extends Usuario implements Serializable {
     //Atributos
-    //@Column(name="x")
     @Column(nullable = false)
     private LocalDateTime fechaNacimiento;
-    //@Column(name="x")
-    @Column(nullable = false)
-    private String alergias;
+    @Column(nullable = false, length = 150)
+    private String alegias;
+
     //Enums
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private EPS codigoEPS;
-    @Column(nullable = false)
     private TipoSangre codigoTipoSangre;
+
     //Relaciones
     @OneToMany(mappedBy="codigoPaciente")
     private List<Cita> cita;
-    @OneToMany(mappedBy="codigoPaciente")
-    private List<Mensaje> mensajes;
 }
