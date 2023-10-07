@@ -4,80 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Modificacion de los enums">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/ClinicaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p__m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2023_10_47_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2023_10_47_p__m___Changes_.xml" afterDir="false" />
+    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Creacion de los junits de los servicios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/EmailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/EmailDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/HorarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/HorarioDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/ItemPQRSDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/ItemPQRSDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/LoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/NewPasswordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/NewPasswordDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/RegistroRespuestaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/RegistroRespuestaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/RespuestaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/RespuestaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/DetallesMedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesMedicoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/DetallesPQRSDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesPQRSDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/ItemCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/ItemMedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemMedicoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/administrador/RegistroMedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/RegistroMedicoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/DiaLibreDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/DiaLibreDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/ItemCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/ItemCitaHistorialDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaHistorialDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/ItemCitaRealizadaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaRealizadaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/medico/RegistroAtencionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/RegistroAtencionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallesCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/DetallesPQRSDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesPQRSDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/FiltroBusquedaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/FiltroBusquedaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/ItemCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroPQRSDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPQRSDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPacienteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Cita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Cita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Consulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Disponibilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Disponibilidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Horario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Horario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Medico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Mensaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/PQRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/PQRS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/RegistroRecordatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/RegistroRecordatorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/classes/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/Ciudad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/Ciudad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/EPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/EPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/Especialidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/Especialidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/EstadoCita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoCita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/EstadoPQRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoPQRS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/EstadoRecordatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoRecordatorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/EstadoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/TipoPQRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/TipoPQRS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/model/enums/TipoSangre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/enums/TipoSangre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/CitaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/CitaRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/CuentaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/CuentaRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/HorarioRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/HorarioRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/MedicoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/MedicoRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/MensajeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/MensajeRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/PQRSRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/PQRSRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/repositorios/PacienteRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/PacienteRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/AdministradorSerivicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/impl/AdministradorSerivicioImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/impl/PacienteServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/impl/PacienteServicioImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/AdmnistradorServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AdmnistradorServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/AtencionServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AtencionServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/CitaServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/CitaServicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/EmailServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/EmailServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/HorarioServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/HorarioServicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/ImagenesServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/ImagenesServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/MedicoServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/MedicoServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/PQRServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PQRServicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clinica/services/interfaces/PacienteServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Clinica/PacienteServicioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/PacienteRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/PacienteRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/impl/PacienteServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/impl/PacienteServicioImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java" afterDir="false" />
     </list>
-    <list id="43901321-8be7-4800-99a7-86a9ef2a4035" name="Changes by manu7" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,12 +40,6 @@
                 <item name="ProyectoSoftware" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ProyectoSoftware" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -131,6 +59,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -151,7 +80,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/manu7/Desktop/Avanzada/ClinicaLaBienAmada&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/albed/Documents/ProyectosProgramacion/IntelliJProjects/ProyectoSoftware/src/main/java/Clinica&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -180,8 +109,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PacienteServicioTest.registroPaciente (1)">
-    <configuration name="PacienteServicioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.PacienteServicioTest.iniciarSesion">
+    <configuration name="PacienteServicioTest.editarPerfil" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -194,7 +130,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;co.edu.uniquindio.clinica.PacienteServicioTest&quot;" />
+            <option value="&quot;co.edu.uniquindio.clinica.PacienteServicioTest.editarPerfil&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,7 +140,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PacienteServicioTest.registroPaciente (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PacienteServicioTest.eliminarPaciente" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -217,7 +153,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;co.edu.uniquindio.clinica.PacienteServicioTest.registroPaciente&quot;" />
+            <option value="&quot;co.edu.uniquindio.clinica.PacienteServicioTest.eliminarPaciente&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PacienteServicioTest.iniciarSesion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;co.edu.uniquindio.clinica.PacienteServicioTest.iniciarSesion&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -240,33 +199,12 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;Clinica.PacienteServicioTest.registroPaciente&quot;" />
+            <option value="&quot;co.edu.uniquindio.clinica.PacienteServicioTest.registroPaciente&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ProyectoSoftware_2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -293,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PacienteServicioTest.registroPaciente (1)" />
-        <item itemvalue="Spring Boot.ClinicaApplication" />
-        <item itemvalue="Gradle.ProyectoSoftware_2 [clean]" />
-        <item itemvalue="Gradle.PacienteServicioTest" />
+        <item itemvalue="Gradle.PacienteServicioTest.iniciarSesion" />
         <item itemvalue="Gradle.PacienteServicioTest.registroPaciente" />
+        <item itemvalue="Gradle.PacienteServicioTest.eliminarPaciente" />
+        <item itemvalue="Gradle.PacienteServicioTest.editarPerfil" />
+        <item itemvalue="Spring Boot.ClinicaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -313,11 +251,7 @@
       <workItem from="1695152165434" duration="3006000" />
       <workItem from="1695156238928" duration="6000" />
       <workItem from="1696515421268" duration="12302000" />
-      <workItem from="1696620467029" duration="297000" />
-      <workItem from="1696621000859" duration="583000" />
-      <workItem from="1696637117226" duration="1340000" />
-      <workItem from="1696638912781" duration="612000" />
-      <workItem from="1696639920189" duration="3326000" />
+      <workItem from="1696693930689" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="Modificacion de los enums">
       <created>1696564688987</created>
@@ -347,20 +281,5 @@
     <MESSAGE value="Se crearon los servicios para registrar un paciente" />
     <MESSAGE value="Modificacion de los enums" />
     <option name="LAST_COMMIT_MESSAGE" value="Modificacion de los enums" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java</url>
-          <line>22</line>
-          <properties class="co.edu.uniquindio.clinica.PacienteServicioTest" method="registroPaciente">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

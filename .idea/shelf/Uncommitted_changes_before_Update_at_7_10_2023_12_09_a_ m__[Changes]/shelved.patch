@@ -1,0 +1,1189 @@
+Index: src/test/java/Clinica/PacienteServicioTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Clinica/PacienteServicioTest.java b/src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java
+rename from src/test/java/Clinica/PacienteServicioTest.java
+rename to src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java
+--- a/src/test/java/Clinica/PacienteServicioTest.java	
++++ b/src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java	
+@@ -1,14 +1,13 @@
+-package Clinica;
++package co.edu.uniquindio.clinica;
+ 
+-import Clinica.dto.paciente.DetallePacienteDTO;
+-import Clinica.dto.paciente.RegistroPacienteDTO;
+-import Clinica.model.enums.Ciudad;
+-import Clinica.model.enums.EPS;
+-import Clinica.model.enums.TipoSangre;
+-import Clinica.services.interfaces.PacienteServicio;
++import co.edu.uniquindio.clinica.dto.paciente.DetallePacienteDTO;
++import co.edu.uniquindio.clinica.dto.paciente.RegistroPacienteDTO;
++import co.edu.uniquindio.clinica.model.enums.Ciudad;
++import co.edu.uniquindio.clinica.model.enums.EPS;
++import co.edu.uniquindio.clinica.model.enums.TipoSangre;
++import co.edu.uniquindio.clinica.services.interfaces.PacienteServicio;
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.boot.test.context.SpringBootTest;
+-import org.springframework.transaction.annotation.Transactional;
+ import org.junit.jupiter.api.Assertions;
+ import org.junit.jupiter.api.Test;
+ 
+Index: src/main/java/Clinica/dto/administrador/DetallesMedicoDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/administrador/DetallesMedicoDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesMedicoDTO.java
+rename from src/main/java/Clinica/dto/administrador/DetallesMedicoDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesMedicoDTO.java
+--- a/src/main/java/Clinica/dto/administrador/DetallesMedicoDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesMedicoDTO.java	
+@@ -1,8 +1,8 @@
+-package Clinica.dto.administrador;
++package co.edu.uniquindio.clinica.dto.administrador;
+ 
+-import Clinica.dto.HorarioDTO;
+-import Clinica.model.enums.Ciudad;
+-import Clinica.model.enums.Especialidad;
++import co.edu.uniquindio.clinica.dto.HorarioDTO;
++import co.edu.uniquindio.clinica.model.enums.Ciudad;
++import co.edu.uniquindio.clinica.model.enums.Especialidad;
+ import jakarta.validation.constraints.Email;
+ import jakarta.validation.constraints.NotNull;
+ import org.hibernate.validator.constraints.Length;
+Index: src/main/java/Clinica/services/interfaces/MedicoServicio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/MedicoServicio.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/MedicoServicio.java
+rename from src/main/java/Clinica/services/interfaces/MedicoServicio.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/MedicoServicio.java
+--- a/src/main/java/Clinica/services/interfaces/MedicoServicio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/MedicoServicio.java	
+@@ -1,4 +1,4 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+ public interface MedicoServicio {
+ 
+Index: src/main/java/Clinica/services/interfaces/ImagenesServicio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/ImagenesServicio.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/ImagenesServicio.java
+rename from src/main/java/Clinica/services/interfaces/ImagenesServicio.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/ImagenesServicio.java
+--- a/src/main/java/Clinica/services/interfaces/ImagenesServicio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/ImagenesServicio.java	
+@@ -1,4 +1,4 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+ public interface ImagenesServicio {
+     void subirImagen() throws Exception;
+Index: src/main/java/Clinica/services/interfaces/HorarioServicios.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/HorarioServicios.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/HorarioServicios.java
+rename from src/main/java/Clinica/services/interfaces/HorarioServicios.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/HorarioServicios.java
+--- a/src/main/java/Clinica/services/interfaces/HorarioServicios.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/HorarioServicios.java	
+@@ -1,4 +1,4 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+ public interface HorarioServicios {
+ }
+Index: src/main/java/Clinica/services/interfaces/EmailServicio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/EmailServicio.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/EmailServicio.java
+rename from src/main/java/Clinica/services/interfaces/EmailServicio.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/EmailServicio.java
+--- a/src/main/java/Clinica/services/interfaces/EmailServicio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/EmailServicio.java	
+@@ -1,7 +1,7 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+ 
+-import Clinica.dto.EmailDTO;
++import co.edu.uniquindio.clinica.dto.EmailDTO;
+ 
+ 
+ public interface EmailServicio {
+Index: src/main/java/Clinica/services/interfaces/CitaServicios.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/CitaServicios.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/CitaServicios.java
+rename from src/main/java/Clinica/services/interfaces/CitaServicios.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/CitaServicios.java
+--- a/src/main/java/Clinica/services/interfaces/CitaServicios.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/CitaServicios.java	
+@@ -1,4 +1,4 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+ public interface CitaServicios {
+ 
+Index: src/main/java/Clinica/services/interfaces/AtencionServicio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/AtencionServicio.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AtencionServicio.java
+rename from src/main/java/Clinica/services/interfaces/AtencionServicio.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/AtencionServicio.java
+--- a/src/main/java/Clinica/services/interfaces/AtencionServicio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AtencionServicio.java	
+@@ -1,4 +1,4 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+ public interface AtencionServicio {
+ 
+Index: src/main/java/Clinica/services/interfaces/AdmnistradorServicio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/AdmnistradorServicio.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AdmnistradorServicio.java
+rename from src/main/java/Clinica/services/interfaces/AdmnistradorServicio.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/AdmnistradorServicio.java
+--- a/src/main/java/Clinica/services/interfaces/AdmnistradorServicio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AdmnistradorServicio.java	
+@@ -1,9 +1,10 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+-import Clinica.model.enums.EstadoPQRS;
++import co.edu.uniquindio.clinica.dto.administrador.*;
++import co.edu.uniquindio.clinica.model.enums.EstadoPQRS;
+ import Clinica.dto.administrador.*;
+-import Clinica.dto.ItemPQRSDTO;
+-import Clinica.dto.RegistroRespuestaDTO;
++import co.edu.uniquindio.clinica.dto.ItemPQRSDTO;
++import co.edu.uniquindio.clinica.dto.RegistroRespuestaDTO;
+ 
+ import java.util.List;
+ 
+Index: src/main/java/Clinica/services/impl/AdministradorSerivicioImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/impl/AdministradorSerivicioImpl.java b/src/main/java/co/edu/uniquindio/clinica/services/impl/AdministradorSerivicioImpl.java
+rename from src/main/java/Clinica/services/impl/AdministradorSerivicioImpl.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/impl/AdministradorSerivicioImpl.java
+--- a/src/main/java/Clinica/services/impl/AdministradorSerivicioImpl.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/impl/AdministradorSerivicioImpl.java	
+@@ -1,12 +1,13 @@
+-package Clinica.services.impl;
++package co.edu.uniquindio.clinica.services.impl;
+ 
+-import Clinica.model.enums.EstadoPQRS;
++import co.edu.uniquindio.clinica.dto.administrador.*;
++import co.edu.uniquindio.clinica.model.enums.EstadoPQRS;
+ import Clinica.repositorios.*;
+-import Clinica.services.interfaces.AdmnistradorServicio;
++import co.edu.uniquindio.clinica.services.interfaces.AdmnistradorServicio;
+ import Clinica.dto.administrador.*;
+-import Clinica.dto.ItemPQRSDTO;
+-import Clinica.dto.RegistroRespuestaDTO;
+-import Clinica.repositorios.*;
++import co.edu.uniquindio.clinica.dto.ItemPQRSDTO;
++import co.edu.uniquindio.clinica.dto.RegistroRespuestaDTO;
++import co.edu.uniquindio.clinica.repositorios.*;
+ import lombok.RequiredArgsConstructor;
+ import org.springframework.stereotype.Service;
+ 
+Index: src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java
+rename from src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java
+--- a/src/main/java/Clinica/dto/paciente/DetallePacienteDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java	
+@@ -1,13 +1,12 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+-import Clinica.model.enums.Ciudad;
+-import Clinica.model.enums.EPS;
+-import Clinica.model.enums.TipoSangre;
++import co.edu.uniquindio.clinica.model.enums.Ciudad;
++import co.edu.uniquindio.clinica.model.enums.EPS;
++import co.edu.uniquindio.clinica.model.enums.TipoSangre;
+ import jakarta.validation.constraints.Email;
+ import jakarta.validation.constraints.NotNull;
+ 
+ import java.time.LocalDateTime;
+-import java.util.Date;
+ 
+ public record DetallePacienteDTO(
+         @NotNull
+Index: src/main/java/Clinica/model/classes/RegistroRecordatorio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/RegistroRecordatorio.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/RegistroRecordatorio.java
+rename from src/main/java/Clinica/model/classes/RegistroRecordatorio.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/RegistroRecordatorio.java
+--- a/src/main/java/Clinica/model/classes/RegistroRecordatorio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/RegistroRecordatorio.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+ import ProyectoFinal.model.enums.EstadoRecordatorio;
+ import jakarta.persistence.*;
+Index: src/main/java/Clinica/model/classes/Administrador.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Administrador.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Administrador.java
+rename from src/main/java/Clinica/model/classes/Administrador.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Administrador.java
+--- a/src/main/java/Clinica/model/classes/Administrador.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Administrador.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+ import jakarta.persistence.Entity;
+ import lombok.Getter;
+Index: src/main/java/Clinica/dto/ItemPQRSDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/ItemPQRSDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/ItemPQRSDTO.java
+rename from src/main/java/Clinica/dto/ItemPQRSDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/ItemPQRSDTO.java
+--- a/src/main/java/Clinica/dto/ItemPQRSDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/ItemPQRSDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto;
++package co.edu.uniquindio.clinica.dto;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/model/classes/Cita.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Cita.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Cita.java
+rename from src/main/java/Clinica/model/classes/Cita.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Cita.java
+--- a/src/main/java/Clinica/model/classes/Cita.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Cita.java	
+@@ -1,6 +1,6 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+-import Clinica.model.enums.EstadoCita;
++import co.edu.uniquindio.clinica.model.enums.EstadoCita;
+ import jakarta.persistence.*;
+ import lombok.AllArgsConstructor;
+ import lombok.Getter;
+Index: src/main/java/Clinica/model/enums/Especialidad.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/Especialidad.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/Especialidad.java
+rename from src/main/java/Clinica/model/enums/Especialidad.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/Especialidad.java
+--- a/src/main/java/Clinica/model/enums/Especialidad.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/Especialidad.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum Especialidad {
+     MEDICINA_GENERAL("MEDICINA GENERAL"),
+Index: src/main/java/Clinica/model/classes/Paciente.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Paciente.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Paciente.java
+rename from src/main/java/Clinica/model/classes/Paciente.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Paciente.java
+--- a/src/main/java/Clinica/model/classes/Paciente.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Paciente.java	
+@@ -1,9 +1,7 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+-import Clinica.model.enums.EPS;
+-import Clinica.model.enums.TipoSangre;
+-import Clinica.model.enums.EPS;
+-import Clinica.model.enums.TipoSangre;
++import co.edu.uniquindio.clinica.model.enums.EPS;
++import co.edu.uniquindio.clinica.model.enums.TipoSangre;
+ import jakarta.persistence.Column;
+ import jakarta.persistence.DiscriminatorValue;
+ import jakarta.persistence.Entity;
+@@ -15,7 +13,6 @@
+ 
+ import java.io.Serializable;
+ import java.time.LocalDateTime;
+-import java.util.Date;
+ import java.util.List;
+ 
+ @Entity
+Index: src/main/java/Clinica/model/enums/EstadoRecordatorio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/EstadoRecordatorio.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoRecordatorio.java
+rename from src/main/java/Clinica/model/enums/EstadoRecordatorio.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoRecordatorio.java
+--- a/src/main/java/Clinica/model/enums/EstadoRecordatorio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoRecordatorio.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum EstadoRecordatorio {
+     ENVIADO("Enviado"),
+Index: src/main/java/Clinica/model/enums/EstadoCita.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/EstadoCita.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoCita.java
+rename from src/main/java/Clinica/model/enums/EstadoCita.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoCita.java
+--- a/src/main/java/Clinica/model/enums/EstadoCita.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoCita.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum EstadoCita {
+     PROGRAMADA("Programada"),
+Index: src/main/java/Clinica/services/interfaces/PQRServicios.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/PQRServicios.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PQRServicios.java
+rename from src/main/java/Clinica/services/interfaces/PQRServicios.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/PQRServicios.java
+--- a/src/main/java/Clinica/services/interfaces/PQRServicios.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PQRServicios.java	
+@@ -1,4 +1,4 @@
+-package Clinica.services.interfaces;
++package co.edu.uniquindio.clinica.services.interfaces;
+ 
+ public interface PQRServicios {
+ 
+Index: src/main/java/Clinica/model/enums/TipoSangre.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/TipoSangre.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/TipoSangre.java
+rename from src/main/java/Clinica/model/enums/TipoSangre.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/TipoSangre.java
+--- a/src/main/java/Clinica/model/enums/TipoSangre.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/TipoSangre.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum TipoSangre {
+     O_POSITIVO("O+"),
+Index: src/main/java/Clinica/services/interfaces/PacienteServicio.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/interfaces/PacienteServicio.java b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServicio.java
+rename from src/main/java/Clinica/services/interfaces/PacienteServicio.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServicio.java
+--- a/src/main/java/Clinica/services/interfaces/PacienteServicio.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServicio.java	
+@@ -1,7 +1,7 @@
+-    package Clinica.services.interfaces;
++    package co.edu.uniquindio.clinica.services.interfaces;
+ 
+-    import Clinica.dto.paciente.DetallePacienteDTO;
+-    import Clinica.dto.paciente.RegistroPacienteDTO;
++    import co.edu.uniquindio.clinica.dto.paciente.DetallePacienteDTO;
++    import co.edu.uniquindio.clinica.dto.paciente.RegistroPacienteDTO;
+ 
+     public interface PacienteServicio {
+ 
+Index: src/main/java/Clinica/model/enums/Ciudad.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/Ciudad.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/Ciudad.java
+rename from src/main/java/Clinica/model/enums/Ciudad.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/Ciudad.java
+--- a/src/main/java/Clinica/model/enums/Ciudad.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/Ciudad.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum Ciudad {
+     ARMENIA("ARMENIA"),
+Index: src/main/java/Clinica/model/classes/Cuenta.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Cuenta.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Cuenta.java
+rename from src/main/java/Clinica/model/classes/Cuenta.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Cuenta.java
+--- a/src/main/java/Clinica/model/classes/Cuenta.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Cuenta.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+ import jakarta.persistence.*;
+ import lombok.AllArgsConstructor;
+Index: src/main/java/Clinica/model/enums/EstadoUsuario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/EstadoUsuario.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoUsuario.java
+rename from src/main/java/Clinica/model/enums/EstadoUsuario.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoUsuario.java
+--- a/src/main/java/Clinica/model/enums/EstadoUsuario.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoUsuario.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum EstadoUsuario {
+     ACTIVO("Activo"),
+Index: src/main/java/Clinica/dto/RespuestaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/RespuestaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/RespuestaDTO.java
+rename from src/main/java/Clinica/dto/RespuestaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/RespuestaDTO.java
+--- a/src/main/java/Clinica/dto/RespuestaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/RespuestaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto;
++package co.edu.uniquindio.clinica.dto;
+ 
+ public record RespuestaDTO() {
+ }
+Index: src/main/java/Clinica/model/enums/EstadoPQRS.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/EstadoPQRS.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoPQRS.java
+rename from src/main/java/Clinica/model/enums/EstadoPQRS.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoPQRS.java
+--- a/src/main/java/Clinica/model/enums/EstadoPQRS.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/EstadoPQRS.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum EstadoPQRS {
+     NUEVO("Nuevo"),
+Index: src/main/java/Clinica/model/classes/Horario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Horario.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Horario.java
+rename from src/main/java/Clinica/model/classes/Horario.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Horario.java
+--- a/src/main/java/Clinica/model/classes/Horario.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Horario.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+ import jakarta.persistence.*;
+ import lombok.AllArgsConstructor;
+Index: src/main/java/Clinica/model/classes/Consulta.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Consulta.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Consulta.java
+rename from src/main/java/Clinica/model/classes/Consulta.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Consulta.java
+--- a/src/main/java/Clinica/model/classes/Consulta.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Consulta.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+ import jakarta.persistence.*;
+ import lombok.AllArgsConstructor;
+Index: src/main/java/Clinica/model/enums/TipoPQRS.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/TipoPQRS.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/TipoPQRS.java
+rename from src/main/java/Clinica/model/enums/TipoPQRS.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/TipoPQRS.java
+--- a/src/main/java/Clinica/model/enums/TipoPQRS.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/TipoPQRS.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum TipoPQRS {
+     PETICION("Petición"),
+Index: src/main/java/Clinica/model/classes/PQRS.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/PQRS.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/PQRS.java
+rename from src/main/java/Clinica/model/classes/PQRS.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/PQRS.java
+--- a/src/main/java/Clinica/model/classes/PQRS.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/PQRS.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+ import ProyectoFinal.model.enums.EstadoPQRS;
+ import ProyectoFinal.model.enums.TipoPQRS;
+Index: src/main/java/Clinica/dto/medico/RegistroAtencionDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/medico/RegistroAtencionDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/medico/RegistroAtencionDTO.java
+rename from src/main/java/Clinica/dto/medico/RegistroAtencionDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/medico/RegistroAtencionDTO.java
+--- a/src/main/java/Clinica/dto/medico/RegistroAtencionDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/medico/RegistroAtencionDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.medico;
++package co.edu.uniquindio.clinica.dto.medico;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/model/classes/Disponibilidad.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Disponibilidad.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Disponibilidad.java
+rename from src/main/java/Clinica/model/classes/Disponibilidad.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Disponibilidad.java
+--- a/src/main/java/Clinica/model/classes/Disponibilidad.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Disponibilidad.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+ import jakarta.persistence.*;
+ import lombok.AllArgsConstructor;
+Index: src/main/java/Clinica/model/classes/Usuario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Usuario.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Usuario.java
+rename from src/main/java/Clinica/model/classes/Usuario.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Usuario.java
+--- a/src/main/java/Clinica/model/classes/Usuario.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Usuario.java	
+@@ -1,7 +1,7 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ 
+-import Clinica.model.enums.Ciudad;
+-import Clinica.model.enums.EstadoUsuario;
++import co.edu.uniquindio.clinica.model.enums.Ciudad;
++import co.edu.uniquindio.clinica.model.enums.EstadoUsuario;
+ import jakarta.persistence.Column;
+ import jakarta.persistence.Inheritance;
+ import jakarta.persistence.InheritanceType;
+Index: src/main/java/Clinica/model/classes/Mensaje.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Mensaje.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Mensaje.java
+rename from src/main/java/Clinica/model/classes/Mensaje.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Mensaje.java
+--- a/src/main/java/Clinica/model/classes/Mensaje.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Mensaje.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.classes;
++package co.edu.uniquindio.clinica.model.classes;
+ import jakarta.persistence.*;
+ import lombok.AllArgsConstructor;
+ import lombok.Getter;
+Index: src/main/java/Clinica/model/classes/Medico.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/classes/Medico.java b/src/main/java/co/edu/uniquindio/clinica/model/classes/Medico.java
+rename from src/main/java/Clinica/model/classes/Medico.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/classes/Medico.java
+--- a/src/main/java/Clinica/model/classes/Medico.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/classes/Medico.java	
+@@ -1,5 +1,5 @@
+-package Clinica.model.classes;
+-import Clinica.model.enums.Especialidad;
++package co.edu.uniquindio.clinica.model.classes;
++import co.edu.uniquindio.clinica.model.enums.Especialidad;
+ import jakarta.persistence.DiscriminatorValue;
+ import jakarta.persistence.Entity;
+ import jakarta.persistence.OneToMany;
+Index: src/main/java/Clinica/model/enums/EPS.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/model/enums/EPS.java b/src/main/java/co/edu/uniquindio/clinica/model/enums/EPS.java
+rename from src/main/java/Clinica/model/enums/EPS.java
+rename to src/main/java/co/edu/uniquindio/clinica/model/enums/EPS.java
+--- a/src/main/java/Clinica/model/enums/EPS.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/model/enums/EPS.java	
+@@ -1,4 +1,4 @@
+-package Clinica.model.enums;
++package co.edu.uniquindio.clinica.model.enums;
+ 
+ public enum EPS {
+     SURA("SURA"),
+Index: src/main/java/Clinica/repositorios/PQRSRepo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/repositorios/PQRSRepo.java b/src/main/java/co/edu/uniquindio/clinica/repositorios/PQRSRepo.java
+rename from src/main/java/Clinica/repositorios/PQRSRepo.java
+rename to src/main/java/co/edu/uniquindio/clinica/repositorios/PQRSRepo.java
+--- a/src/main/java/Clinica/repositorios/PQRSRepo.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/repositorios/PQRSRepo.java	
+@@ -1,6 +1,6 @@
+-package Clinica.repositorios;
++package co.edu.uniquindio.clinica.repositorios;
+ 
+-import Clinica.model.classes.PQRS;
++import co.edu.uniquindio.clinica.model.classes.PQRS;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ import org.springframework.stereotype.Repository;
+ 
+Index: src/main/java/Clinica/repositorios/MensajeRepo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/repositorios/MensajeRepo.java b/src/main/java/co/edu/uniquindio/clinica/repositorios/MensajeRepo.java
+rename from src/main/java/Clinica/repositorios/MensajeRepo.java
+rename to src/main/java/co/edu/uniquindio/clinica/repositorios/MensajeRepo.java
+--- a/src/main/java/Clinica/repositorios/MensajeRepo.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/repositorios/MensajeRepo.java	
+@@ -1,6 +1,6 @@
+-package Clinica.repositorios;
++package co.edu.uniquindio.clinica.repositorios;
+ 
+-import Clinica.model.classes.Mensaje;
++import co.edu.uniquindio.clinica.model.classes.Mensaje;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ import org.springframework.stereotype.Repository;
+ 
+Index: src/main/java/Clinica/repositorios/MedicoRepo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/repositorios/MedicoRepo.java b/src/main/java/co/edu/uniquindio/clinica/repositorios/MedicoRepo.java
+rename from src/main/java/Clinica/repositorios/MedicoRepo.java
+rename to src/main/java/co/edu/uniquindio/clinica/repositorios/MedicoRepo.java
+--- a/src/main/java/Clinica/repositorios/MedicoRepo.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/repositorios/MedicoRepo.java	
+@@ -1,7 +1,7 @@
+-package Clinica.repositorios;
++package co.edu.uniquindio.clinica.repositorios;
+ 
+-import Clinica.model.enums.Especialidad;
+-import Clinica.model.classes.Medico;
++import co.edu.uniquindio.clinica.model.enums.Especialidad;
++import co.edu.uniquindio.clinica.model.classes.Medico;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ import org.springframework.stereotype.Repository;
+ 
+Index: src/main/java/Clinica/repositorios/HorarioRepo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/repositorios/HorarioRepo.java b/src/main/java/co/edu/uniquindio/clinica/repositorios/HorarioRepo.java
+rename from src/main/java/Clinica/repositorios/HorarioRepo.java
+rename to src/main/java/co/edu/uniquindio/clinica/repositorios/HorarioRepo.java
+--- a/src/main/java/Clinica/repositorios/HorarioRepo.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/repositorios/HorarioRepo.java	
+@@ -1,6 +1,6 @@
+-package Clinica.repositorios;
++package co.edu.uniquindio.clinica.repositorios;
+ 
+-import Clinica.model.classes.Horario;
++import co.edu.uniquindio.clinica.model.classes.Horario;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ import org.springframework.stereotype.Repository;
+ 
+Index: src/main/java/Clinica/repositorios/CuentaRepo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/repositorios/CuentaRepo.java b/src/main/java/co/edu/uniquindio/clinica/repositorios/CuentaRepo.java
+rename from src/main/java/Clinica/repositorios/CuentaRepo.java
+rename to src/main/java/co/edu/uniquindio/clinica/repositorios/CuentaRepo.java
+--- a/src/main/java/Clinica/repositorios/CuentaRepo.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/repositorios/CuentaRepo.java	
+@@ -1,6 +1,6 @@
+-package Clinica.repositorios;
++package co.edu.uniquindio.clinica.repositorios;
+ 
+-import Clinica.model.classes.Cuenta;
++import co.edu.uniquindio.clinica.model.classes.Cuenta;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ import org.springframework.stereotype.Repository;
+ 
+Index: src/main/java/Clinica/repositorios/CitaRepo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/repositorios/CitaRepo.java b/src/main/java/co/edu/uniquindio/clinica/repositorios/CitaRepo.java
+rename from src/main/java/Clinica/repositorios/CitaRepo.java
+rename to src/main/java/co/edu/uniquindio/clinica/repositorios/CitaRepo.java
+--- a/src/main/java/Clinica/repositorios/CitaRepo.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/repositorios/CitaRepo.java	
+@@ -1,6 +1,6 @@
+-package Clinica.repositorios;
++package co.edu.uniquindio.clinica.repositorios;
+ 
+-import Clinica.model.classes.Cita;
++import co.edu.uniquindio.clinica.model.classes.Cita;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ import org.springframework.stereotype.Repository;
+ 
+Index: src/main/java/Clinica/dto/medico/DiaLibreDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/medico/DiaLibreDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/medico/DiaLibreDTO.java
+rename from src/main/java/Clinica/dto/medico/DiaLibreDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/medico/DiaLibreDTO.java
+--- a/src/main/java/Clinica/dto/medico/DiaLibreDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/medico/DiaLibreDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.medico;
++package co.edu.uniquindio.clinica.dto.medico;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/medico/ItemCitaHistorialDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/medico/ItemCitaHistorialDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaHistorialDTO.java
+rename from src/main/java/Clinica/dto/medico/ItemCitaHistorialDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaHistorialDTO.java
+--- a/src/main/java/Clinica/dto/medico/ItemCitaHistorialDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaHistorialDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.medico;
++package co.edu.uniquindio.clinica.dto.medico;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/paciente/RegistroPQRSDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/RegistroPQRSDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPQRSDTO.java
+rename from src/main/java/Clinica/dto/paciente/RegistroPQRSDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPQRSDTO.java
+--- a/src/main/java/Clinica/dto/paciente/RegistroPQRSDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPQRSDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/administrador/DetallesPQRSDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/administrador/DetallesPQRSDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesPQRSDTO.java
+rename from src/main/java/Clinica/dto/administrador/DetallesPQRSDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesPQRSDTO.java
+--- a/src/main/java/Clinica/dto/administrador/DetallesPQRSDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesPQRSDTO.java	
+@@ -1,6 +1,6 @@
+-package Clinica.dto.administrador;
++package co.edu.uniquindio.clinica.dto.administrador;
+ 
+-import Clinica.dto.RespuestaDTO;
++import co.edu.uniquindio.clinica.dto.RespuestaDTO;
+ import jakarta.validation.constraints.Email;
+ import jakarta.validation.constraints.NotNull;
+ import org.hibernate.validator.constraints.Length;
+Index: src/main/java/Clinica/dto/paciente/DetallesPQRSDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/DetallesPQRSDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesPQRSDTO.java
+rename from src/main/java/Clinica/dto/paciente/DetallesPQRSDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesPQRSDTO.java
+--- a/src/main/java/Clinica/dto/paciente/DetallesPQRSDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesPQRSDTO.java	
+@@ -1,6 +1,6 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+-import Clinica.dto.RespuestaDTO;
++import co.edu.uniquindio.clinica.dto.RespuestaDTO;
+ import jakarta.validation.constraints.NotNull;
+ 
+ import java.util.Date;
+Index: src/main/java/Clinica/dto/EmailDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/EmailDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/EmailDTO.java
+rename from src/main/java/Clinica/dto/EmailDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/EmailDTO.java
+--- a/src/main/java/Clinica/dto/EmailDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/EmailDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto;
++package co.edu.uniquindio.clinica.dto;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPacienteDTO.java
+rename from src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPacienteDTO.java
+--- a/src/main/java/Clinica/dto/paciente/RegistroPacienteDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPacienteDTO.java	
+@@ -1,13 +1,12 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+-import Clinica.model.enums.Ciudad;
+-import Clinica.model.enums.EPS;
+-import Clinica.model.enums.TipoSangre;
++import co.edu.uniquindio.clinica.model.enums.Ciudad;
++import co.edu.uniquindio.clinica.model.enums.EPS;
++import co.edu.uniquindio.clinica.model.enums.TipoSangre;
+ import jakarta.validation.constraints.Email;
+ import jakarta.validation.constraints.NotNull;
+ 
+ import java.time.LocalDateTime;
+-import java.util.Date;
+ 
+ public record RegistroPacienteDTO (
+         @NotNull
+Index: src/main/java/Clinica/dto/paciente/ItemCitaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/ItemCitaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemCitaDTO.java
+rename from src/main/java/Clinica/dto/paciente/ItemCitaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemCitaDTO.java
+--- a/src/main/java/Clinica/dto/paciente/ItemCitaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemCitaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/medico/ItemCitaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/medico/ItemCitaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaDTO.java
+rename from src/main/java/Clinica/dto/medico/ItemCitaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaDTO.java
+--- a/src/main/java/Clinica/dto/medico/ItemCitaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.medico;
++package co.edu.uniquindio.clinica.dto.medico;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/paciente/FiltroBusquedaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/FiltroBusquedaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/FiltroBusquedaDTO.java
+rename from src/main/java/Clinica/dto/paciente/FiltroBusquedaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/FiltroBusquedaDTO.java
+--- a/src/main/java/Clinica/dto/paciente/FiltroBusquedaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/FiltroBusquedaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+ public record FiltroBusquedaDTO() {
+ }
+Index: src/main/java/Clinica/dto/RegistroRespuestaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/RegistroRespuestaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/RegistroRespuestaDTO.java
+rename from src/main/java/Clinica/dto/RegistroRespuestaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/RegistroRespuestaDTO.java
+--- a/src/main/java/Clinica/dto/RegistroRespuestaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/RegistroRespuestaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto;
++package co.edu.uniquindio.clinica.dto;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/NewPasswordDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/NewPasswordDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/NewPasswordDTO.java
+rename from src/main/java/Clinica/dto/NewPasswordDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/NewPasswordDTO.java
+--- a/src/main/java/Clinica/dto/NewPasswordDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/NewPasswordDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto;
++package co.edu.uniquindio.clinica.dto;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/administrador/RegistroMedicoDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/administrador/RegistroMedicoDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/RegistroMedicoDTO.java
+rename from src/main/java/Clinica/dto/administrador/RegistroMedicoDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/administrador/RegistroMedicoDTO.java
+--- a/src/main/java/Clinica/dto/administrador/RegistroMedicoDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/RegistroMedicoDTO.java	
+@@ -1,6 +1,6 @@
+-package Clinica.dto.administrador;
++package co.edu.uniquindio.clinica.dto.administrador;
+ 
+-import Clinica.dto.HorarioDTO;
++import co.edu.uniquindio.clinica.dto.HorarioDTO;
+ import jakarta.validation.constraints.Email;
+ import jakarta.validation.constraints.NotNull;
+ import org.hibernate.validator.constraints.Length;
+Index: src/main/java/Clinica/dto/administrador/ItemCitaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/administrador/ItemCitaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemCitaDTO.java
+rename from src/main/java/Clinica/dto/administrador/ItemCitaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemCitaDTO.java
+--- a/src/main/java/Clinica/dto/administrador/ItemCitaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemCitaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.administrador;
++package co.edu.uniquindio.clinica.dto.administrador;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/LoginDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/LoginDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/LoginDTO.java
+rename from src/main/java/Clinica/dto/LoginDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/LoginDTO.java
+--- a/src/main/java/Clinica/dto/LoginDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/LoginDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto;
++package co.edu.uniquindio.clinica.dto;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/administrador/ItemMedicoDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/administrador/ItemMedicoDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemMedicoDTO.java
+rename from src/main/java/Clinica/dto/administrador/ItemMedicoDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemMedicoDTO.java
+--- a/src/main/java/Clinica/dto/administrador/ItemMedicoDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemMedicoDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.administrador;
++package co.edu.uniquindio.clinica.dto.administrador;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/paciente/DetallesCitaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/DetallesCitaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesCitaDTO.java
+rename from src/main/java/Clinica/dto/paciente/DetallesCitaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesCitaDTO.java
+--- a/src/main/java/Clinica/dto/paciente/DetallesCitaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesCitaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/HorarioDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/HorarioDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/HorarioDTO.java
+rename from src/main/java/Clinica/dto/HorarioDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/HorarioDTO.java
+--- a/src/main/java/Clinica/dto/HorarioDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/HorarioDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto;
++package co.edu.uniquindio.clinica.dto;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/repositorios/PacienteRepo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/repositorios/PacienteRepo.java b/src/main/java/co/edu/uniquindio/clinica/repositorios/PacienteRepo.java
+rename from src/main/java/Clinica/repositorios/PacienteRepo.java
+rename to src/main/java/co/edu/uniquindio/clinica/repositorios/PacienteRepo.java
+--- a/src/main/java/Clinica/repositorios/PacienteRepo.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/repositorios/PacienteRepo.java	
+@@ -1,6 +1,6 @@
+-package Clinica.repositorios;
++package co.edu.uniquindio.clinica.repositorios;
+ 
+-import Clinica.model.classes.Paciente;
++import co.edu.uniquindio.clinica.model.classes.Paciente;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ import org.springframework.stereotype.Repository;
+ 
+Index: src/main/java/Clinica/services/impl/PacienteServicioImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/services/impl/PacienteServicioImpl.java b/src/main/java/co/edu/uniquindio/clinica/services/impl/PacienteServicioImpl.java
+rename from src/main/java/Clinica/services/impl/PacienteServicioImpl.java
+rename to src/main/java/co/edu/uniquindio/clinica/services/impl/PacienteServicioImpl.java
+--- a/src/main/java/Clinica/services/impl/PacienteServicioImpl.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/services/impl/PacienteServicioImpl.java	
+@@ -1,11 +1,11 @@
+-package Clinica.services.impl;
++package co.edu.uniquindio.clinica.services.impl;
+ 
+-import Clinica.dto.paciente.DetallePacienteDTO;
+-import Clinica.dto.paciente.RegistroPacienteDTO;
+-import Clinica.model.classes.Paciente;
+-import Clinica.model.enums.EstadoUsuario;
+-import Clinica.repositorios.PacienteRepo;
+-import Clinica.services.interfaces.PacienteServicio;
++import co.edu.uniquindio.clinica.dto.paciente.DetallePacienteDTO;
++import co.edu.uniquindio.clinica.dto.paciente.RegistroPacienteDTO;
++import co.edu.uniquindio.clinica.model.classes.Paciente;
++import co.edu.uniquindio.clinica.model.enums.EstadoUsuario;
++import co.edu.uniquindio.clinica.repositorios.PacienteRepo;
++import co.edu.uniquindio.clinica.services.interfaces.PacienteServicio;
+ import lombok.RequiredArgsConstructor;
+ import org.springframework.stereotype.Service;
+ 
+Index: src/main/java/Clinica/dto/paciente/RegistroCitaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/paciente/RegistroCitaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroCitaDTO.java
+rename from src/main/java/Clinica/dto/paciente/RegistroCitaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroCitaDTO.java
+--- a/src/main/java/Clinica/dto/paciente/RegistroCitaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroCitaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.paciente;
++package co.edu.uniquindio.clinica.dto.paciente;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 
+Index: src/main/java/Clinica/dto/medico/ItemCitaRealizadaDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Clinica/dto/medico/ItemCitaRealizadaDTO.java b/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaRealizadaDTO.java
+rename from src/main/java/Clinica/dto/medico/ItemCitaRealizadaDTO.java
+rename to src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaRealizadaDTO.java
+--- a/src/main/java/Clinica/dto/medico/ItemCitaRealizadaDTO.java	
++++ b/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaRealizadaDTO.java	
+@@ -1,4 +1,4 @@
+-package Clinica.dto.medico;
++package co.edu.uniquindio.clinica.dto.medico;
+ 
+ import jakarta.validation.constraints.NotNull;
+ 

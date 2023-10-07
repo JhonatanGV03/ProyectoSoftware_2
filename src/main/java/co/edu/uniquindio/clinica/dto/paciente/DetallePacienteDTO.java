@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
 public record DetallePacienteDTO(
         @NotNull
         int codigo,
-
         @NotNull
         String cedula,
         @NotNull @Email

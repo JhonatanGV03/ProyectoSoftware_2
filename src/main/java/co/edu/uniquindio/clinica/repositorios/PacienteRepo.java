@@ -7,9 +7,12 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PacienteRepo extends JpaRepository<Paciente, Integer> {
 
-        Paciente findByCedula(String dni);
+        Paciente findByCedula(String cedula);
 
         Paciente findByCorreo(String email);
 
+        Paciente findByCodigoCuenta(int codigoCuenta);
+
+        Paciente findByCorreoAndPassword(String email, String password);
 
 }

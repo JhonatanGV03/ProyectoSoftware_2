@@ -19,6 +19,17 @@ public class   PacienteServicioImpl implements PacienteServicio {
 
 
     @Override
+    public int iniciarSesion(String email, String password) throws Exception {
+
+        Paciente paciente = pacienteRepo.findByCorreoAndPassword(email, password);
+
+        if(paciente == null){
+            throw new Exception("El correo o la contraseña son incorrectos");
+        }
+        return paciente.getCodigoCuenta();
+    }
+
+    @Override
     public int registrarse(RegistroPacienteDTO registroPacienteDTO) throws Exception {
 
         if(estaRepetidaCedula(registroPacienteDTO.cedula())){
@@ -64,7 +75,7 @@ public class   PacienteServicioImpl implements PacienteServicio {
         Optional<Paciente> buscado = pacienteRepo.findById(detallePacienteDTO.codigo());
 
         if (buscado.isEmpty()){
-            throw new Exception("El codigo" + detallePacienteDTO.cedula() + " no existe.");
+            throw new Exception("El codigo " + detallePacienteDTO.codigo() + " no existe.");
         }
 
         Paciente paciente = buscado.get();
@@ -103,5 +114,11 @@ public class   PacienteServicioImpl implements PacienteServicio {
         pacienteRepo.save( buscado );
 
         return true;
+    }
+
+    @Override
+    public Paciente obtenerPaciente(int codigoPaciente) throws Exception {
+        Paciente paciente = pacienteRepo.findByCodigoCuenta(codigoPaciente);
+        return paciente;
     }
 }

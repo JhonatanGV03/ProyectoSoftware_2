@@ -24,10 +24,10 @@ public class PacienteServicioTest {
 
          System.out.println("PacienteServicioTest.testPacienteServicio");
          RegistroPacienteDTO pacienteDTO = new RegistroPacienteDTO(
-                 "1097222222",
-                 "pepitoperez@gmail.com",
+                 "10972222222",
+                 "pepitoperez2@gmail.com",
                  "3243434",
-                 "Darly Daniela",
+                 "Darly Danielas",
                  313,
                  Ciudad.ARMENIA,
                  LocalDate.of(1990, 10, 7).atStartOfDay(),
@@ -51,7 +51,7 @@ public class PacienteServicioTest {
             System.out.println("PacienteServicioTest.editarPerfil");
             int codigoPaciente = 1;
             DetallePacienteDTO pacienteDTO = new DetallePacienteDTO(
-                    12,
+                    1,
                     "sdsd",
                     "asdads@gmail.com",
                     "Darly Daniela",
@@ -69,10 +69,20 @@ public class PacienteServicioTest {
      }
 
 
-     /*public void eliminarPaciente() throws Exception {
+     @Test
+     public void eliminarPaciente() throws Exception {
          System.out.println("PacienteServicioTest.eliminarPaciente");
          int codigoPaciente = 1;
          boolean eliminado = pacienteServicio.eliminarCuenta(codigoPaciente);
          Assertions.assertTrue(eliminado);
-     }*/
+     }
+     @Test
+    public void iniciarSesion() throws Exception {
+         System.out.println("PacienteServicioTest.iniciarSesion");
+         String email = "asdads@gmail.com", password = "3243434";
+         int codigoPaciente = pacienteServicio.iniciarSesion(email, password);
+         Assertions.assertNotEquals(0, codigoPaciente);
+         System.out.println(codigoPaciente + "PACIENTE LOGUEADO");
+     }
+
 }
