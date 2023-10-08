@@ -8,10 +8,15 @@ import co.edu.uniquindio.clinica.repositorios.PacienteRepo;
 import co.edu.uniquindio.clinica.services.interfaces.PacienteServicio;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
 @Service
+@RestController
 @RequiredArgsConstructor
 public class   PacienteServicioImpl implements PacienteServicio {
 
@@ -19,6 +24,8 @@ public class   PacienteServicioImpl implements PacienteServicio {
 
 
     @Override
+    @CrossOrigin("http://127.0.0.1:8081")
+    @GetMapping("/api/paciente/iniciarSesion")
     public int iniciarSesion(String email, String password) throws Exception {
 
         Paciente paciente = pacienteRepo.findByCorreoAndPassword(email, password);
@@ -30,7 +37,9 @@ public class   PacienteServicioImpl implements PacienteServicio {
     }
 
     @Override
-    public int registrarse(RegistroPacienteDTO registroPacienteDTO) throws Exception {
+    @CrossOrigin("http://127.0.0.1:8081")
+    @GetMapping("/api/paciente/registrarse")
+    public int registrarse(@RequestBody RegistroPacienteDTO registroPacienteDTO) throws Exception {
 
         if(estaRepetidaCedula(registroPacienteDTO.cedula())){
             throw new Exception("La cedula ya se encuentra en uso");
