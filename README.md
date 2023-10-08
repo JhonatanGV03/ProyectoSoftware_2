@@ -1,4 +1,4 @@
-# ProyectoSoftware_2
+# ProyectoSoftware_2 (Backend)
 
 Integrantes:
 - Julian David Cruz Cancimance
