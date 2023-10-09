@@ -24,17 +24,17 @@ public class PacienteServicioTest {
 
          System.out.println("PacienteServicioTest.testPacienteServicio");
          RegistroPacienteDTO pacienteDTO = new RegistroPacienteDTO(
-                 "10972222222",
-                 "pepitoperez2@gmail.com",
-                 "3243434",
-                 "Darly Danielas",
-                 313,
+                 "109496586",
+                 "darlydeguarnizo@uq.com",
+                 "12345",
+                 "Darly Guarnizo",
+                 301298041,
                  Ciudad.ARMENIA,
-                 LocalDate.of(1990, 10, 7).atStartOfDay(),
+                 LocalDate.of(2003, 10, 23).atStartOfDay(),
                  "A tu indiferencia bb",
                  EPS.SURA,
                  TipoSangre.A_POSITIVO,
-                 "SUASASDSA"
+                 "null"
          );
 
 
@@ -52,16 +52,16 @@ public class PacienteServicioTest {
             int codigoPaciente = 1;
             DetallePacienteDTO pacienteDTO = new DetallePacienteDTO(
                     1,
-                    "sdsd",
-                    "asdads@gmail.com",
-                    "Darly Daniela",
-                    123213,
-                    Ciudad.CALARCA,
-                    LocalDate.of(1990, 10, 7).atStartOfDay(),
-                    "Sapo",
-                    EPS.COMFENALCO,
+                    "109496586",
+                    "darlydeguarnizo@uq.com",
+                    "Darly Guarnizo",
+                    301298041,
+                    Ciudad.ARMENIA,
+                    LocalDate.of(2003, 10, 23).atStartOfDay(),
+                    "acetaminofen",
+                    EPS.SURA,
                     TipoSangre.A_POSITIVO,
-                    "asdfadfadsf"
+                    "null"
 
 
             );
