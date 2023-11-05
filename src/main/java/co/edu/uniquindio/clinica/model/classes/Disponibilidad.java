@@ -7,25 +7,24 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class Disponibilidad  implements Serializable {
+public class Disponibilidad implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, unique = true)
     private int codigoDisponibilidad;
 
     //Atributos
     @Column(nullable = false)
-    private Date dia;
+    private LocalDate dia;
 
     //Relaciones
     @ManyToOne
     @JoinColumn(nullable = false)
-    private Medico codigoMedico;
+    private Medico medico;
 }

@@ -1,6 +1,7 @@
 package co.edu.uniquindio.clinica.model.classes;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,11 +20,11 @@ public class Cuenta implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, unique = true)
-    private int codigoCuenta;
+    private int codigo;
 
     //Atributos
-    @Column(nullable = false, unique = true)
+    @Email
+    @Column(nullable = false, unique = true, length = 50)
     private String correo;
     @Column(nullable = false)
     private String password;

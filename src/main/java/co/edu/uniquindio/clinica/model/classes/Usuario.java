@@ -2,10 +2,7 @@ package co.edu.uniquindio.clinica.model.classes;
 
 import co.edu.uniquindio.clinica.model.enums.Ciudad;
 import co.edu.uniquindio.clinica.model.enums.EstadoUsuario;
-import jakarta.persistence.Column;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,18 +18,18 @@ import java.io.Serializable;
 @Setter
 public class Usuario extends Cuenta implements Serializable {
     //Atributos
-    @Column(nullable = false, length = 15, unique = true)
+    @Column(nullable = false, length = 20, unique = true)
     private String cedula;
-    @Column(nullable = false, length = 40)
+    @Column(nullable = false, length = 100)
     private String nombre;
-    @Column(nullable = false)
-    private int telefono;
+    @Column(nullable = false, length = 10)
+    private String telefono;
+    //@ElementCollection //Tengo mis dudas con esto
     @Column(nullable = false)
     private String urlFoto;
 
     //Enums
-
-    private Ciudad codigoCiudad;
-    private EstadoUsuario estadoCuenta;
+    private Ciudad ciudad;
+    private EstadoUsuario estado;
 
 }

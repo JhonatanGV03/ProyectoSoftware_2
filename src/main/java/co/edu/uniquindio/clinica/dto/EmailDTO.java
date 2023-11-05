@@ -1,15 +1,18 @@
 package co.edu.uniquindio.clinica.dto;
 
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import org.hibernate.validator.constraints.Length;
 
 public record EmailDTO(
-        @NotNull
+        //Probablemente haya que agregar una fecha de envío
+        @NotBlank @Length(max = 500)
         String mensaje,
-        @NotNull
+        @NotBlank @Email @Length(max = 50)
         String destinatario,
-        @NotNull
+        @NotBlank @Length(max = 250)
         String asunto,
-        @NotNull
+        @NotBlank @Length(max = 50)
         String remitente
 ) {
 }

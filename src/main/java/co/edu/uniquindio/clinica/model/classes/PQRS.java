@@ -20,22 +20,23 @@ import java.util.List;
 public class PQRS implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, unique = true)
-    private int codigoPQRS;
+    private int codigo;
 
     //Atributos
     @Column(nullable = false)
     private LocalDateTime fechaCreacion;
+    @Column(nullable = false, length = 200)
+    private String motivo;
 
     //Enums
     private TipoPQRS tipoPQRS;
-    private EstadoPQRS codigoEstado;
+    private EstadoPQRS estado;
 
     //Relacion Clases
     @ManyToOne
     @JoinColumn(nullable = false)
-    private Cita codigoCita;
-    @OneToMany(mappedBy="codigoPQRS")
+    private Cita cita;
+    @OneToMany(mappedBy="PQRS")
     private List<Mensaje> mensajes;
 
 

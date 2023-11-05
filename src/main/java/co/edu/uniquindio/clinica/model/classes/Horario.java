@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.sql.Time;
-import java.util.Date;
+import java.time.LocalTime;
 
 @Entity
 @NoArgsConstructor
@@ -18,19 +17,18 @@ import java.util.Date;
 public class Horario  implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, unique = true)
     private int codigoHorario;
 
     //Atributos
     @Column(nullable = false)
-    private Date dia; //String
+    private String dia; //String
     @Column(nullable = false)
-    private Time horaInicio; //LocalTime
+    private LocalTime horaInicio; //LocalTime
     @Column(nullable = false)
-    private Time horaFin; //LocalTime
+    private LocalTime horaFin; //LocalTime
 
     //Relaciones
     @ManyToOne
     @JoinColumn(nullable = false)
-    private Medico codigoMedico;
+    private Medico medico;
 }

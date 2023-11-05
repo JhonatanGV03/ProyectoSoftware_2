@@ -19,15 +19,15 @@ import java.util.List;
 @Setter
 public class Medico extends Usuario implements Serializable {
     //Enums
-    private Especialidad codigoEspecialidad;
+    private Especialidad especialidad;
 
     //Relaciones
-    @OneToMany(mappedBy="codigoMedico")
+    @OneToMany(mappedBy="medico")
     private List<Horario> horarios;
 
-    @OneToMany(mappedBy="codigoMedico")
+    @OneToMany(mappedBy="medico")
     private List<Disponibilidad> disponibilidades;
 
-    @OneToMany(mappedBy="codigoMedico")
+    @OneToMany(mappedBy="medico")
     private List<Cita> citas;
 }

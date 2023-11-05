@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 
 @Entity
@@ -20,32 +22,31 @@ public class Cita implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false)
     private int codigoCita;
     //Atributos
     @Column(nullable = false)
     private LocalDateTime fechaCreacion;
     @Column(nullable = false)
-    private LocalDateTime fechaCita;
-    @Column(nullable = false, length = 150)
+    private LocalDate fechaCita;
+    @Column(nullable = false)
+    private LocalTime horaCita;
+    @Column(nullable = false, length = 500)
     private String motivo;
 
     //Enums
-    private EstadoCita estadoCita;
+    private EstadoCita estado;
 
     //Relaciones
     @ManyToOne
-    @JoinColumn(nullable = false, unique = true)
-    private Paciente codigoPaciente;
-    @ManyToOne
-    @JoinColumn(nullable = false, unique = true)
-    private Medico codigoMedico;
-    @OneToOne(mappedBy="codigoCita")
     @JoinColumn(nullable = false)
+    private Paciente paciente;
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private Medico medico;
+    @OneToOne(mappedBy="cita")
     private Consulta consulta;
     @OneToOne
-    @JoinColumn(nullable = false)
     private RegistroRecordatorio registroRecordatorio;
-    @OneToMany(mappedBy="codigoCita")
+    @OneToMany(mappedBy="cita")
     private List<PQRS> PQRS;
 }
