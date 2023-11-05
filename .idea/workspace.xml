@@ -5,131 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Creacion de los servicios del segundo sprint">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/AdministradorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/AutenticacionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/ImagenesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/MedicoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/PacienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/excepciones/ExcepcionesGlobales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/ImagenDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/MensajeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/TokenDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/ValidacionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesPQRSAdminDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemCitaAdminDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/RegistroAdminDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesConsultaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemPacienteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemPqrsPacienteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/PQRSPacienteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/AdministradorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/CitaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/ConsultaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/CuentaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/DisponibilidadRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/HorarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/MedicoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/MensajeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/PQRSRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/PacienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositories/RegistroRecordatorioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/AdministradorServicioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/AutenticacionServicioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/EmailServicioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/ImagenesServicioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/PDF_ServicioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/PacienteServicioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AdministradorServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AutenticacionServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/EmailServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/ImagenesServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PDFServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/utils/FiltroToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/utils/JWTUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/AdministradorServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/AutenticacionServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/EmailServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/ImagenesServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/PDF_ServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/PacienteServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/dataset.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2023_10_47_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2023_10_47_p_ m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_12_09_a__m___Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_12_09_a_ m__[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_5_06_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_5_06_p_ m__[Changes]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/ClinicaContoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/ClinicaServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/ClinicaServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p__m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_12_09_a__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_12_09_a__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/ClinicaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/ProyectoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/EmailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/EmailDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/HorarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/HorarioDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/ItemPQRSDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/ItemPQRSDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/LoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/NewPasswordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/NewPasswordDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/RegistroRespuestaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/RegistroRespuestaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/RespuestaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/RespuestaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesMedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesMedicoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/DetallesPQRSDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemCitaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemMedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/ItemMedicoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/RegistroMedicoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/administrador/RegistroMedicoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/DiaLibreDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaHistorialDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/ItemCitaRealizadaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/medico/RegistroAtencionDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallePacienteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesPQRSDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/DetallesPQRSDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/FiltroBusquedaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/FiltroBusquedaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/ItemCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroCitaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroCitaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPQRSDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/dto/paciente/RegistroPacienteDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Cita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Cita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Consulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Cuenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Disponibilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Disponibilidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Horario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Horario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Medico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Mensaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/PQRS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/PQRS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/RegistroRecordatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/RegistroRecordatorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/model/classes/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/CitaRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/CuentaRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/HorarioRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/MedicoRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/MensajeRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/PQRSRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/repositorios/PacienteRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/impl/AdministradorSerivicioImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/impl/PacienteServicioImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AdmnistradorServicio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/AtencionServicio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/CitaServicios.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/EmailServicio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/HorarioServicios.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/ImagenesServicio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/MedicoServicio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PQRServicios.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/interfaces/PacienteServicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/AutenticacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/AutenticacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/utils/FiltroToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/utils/FiltroToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/Banco-Brutal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/Encriptador.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/Logo-Codigo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/Storify.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/Subastas-Quindio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/gmail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/logotipo-de-linkedin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/signo-de-github.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Imagenes/whatsapp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/clinica/PacienteServicioTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,43 +82,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/albed/Documents/ProyectosProgramacion/IntelliJProjects/ProyectoSoftware/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "spring.configuration.checksum": "2d5893c827cecc7c6808cedf3d6b0b67",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/albed/Documents/ProyectosProgramacion/IntelliJProjects/ProyectoSoftware/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2d5893c827cecc7c6808cedf3d6b0b67&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\albed\Documents\ProyectosProgramacion\IntelliJProjects\ProyectoSoftware\src\test\resources" />
