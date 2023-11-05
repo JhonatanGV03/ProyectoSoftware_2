@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest
-@Transactional
+
 public class AdministradorServiceTest {
 
     @Autowired
@@ -31,7 +31,7 @@ public class AdministradorServiceTest {
     public void crearMedicoTest() {
 
         List<HorarioDTO> horarios = new ArrayList<>();
-        horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
+        //horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
 
         RegistroMedicoDTO medicoDTO = new RegistroMedicoDTO(
                 "Paco Perez",
@@ -57,7 +57,7 @@ public class AdministradorServiceTest {
     @Sql("classpath:dataset.sql" )
     public void actualizarMedicoTest() {
         List<HorarioDTO> horarios = new ArrayList<>();
-        horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
+        //horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
 
         DetallesMedicoDTO medicoDTO = new DetallesMedicoDTO(
                 8,

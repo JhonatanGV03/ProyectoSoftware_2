@@ -22,8 +22,8 @@ public record RegistroPacienteDTO (
         String telefono,
         @NotNull
         Ciudad ciudad,
-        @NotEmpty @Past(message = "Seleccione una fecha de nacimiento correcta")
-        LocalDate fechaNacimiento,
+        @NotEmpty
+        String fechaNacimiento,
         @NotBlank @Length(max = 250)
         String alergias,
         @NotNull

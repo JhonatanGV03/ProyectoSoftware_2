@@ -8,8 +8,8 @@ public record HorarioDTO (
         @NotNull
         String dia,
         @NotNull
-        LocalTime horaInicio,
+        String horaInicio,
         @NotNull
-        LocalTime horaFin
+        String horaFin
 ){
 }

@@ -23,9 +23,9 @@ public class Horario  implements Serializable {
     @Column(nullable = false)
     private String dia; //String
     @Column(nullable = false)
-    private LocalTime horaInicio; //LocalTime
+    private String horaInicio; //LocalTime
     @Column(nullable = false)
-    private LocalTime horaFin; //LocalTime
+    private String horaFin; //LocalTime
 
     //Relaciones
     @ManyToOne

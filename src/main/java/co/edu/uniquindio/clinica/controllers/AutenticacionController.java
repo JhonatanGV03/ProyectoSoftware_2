@@ -3,7 +3,9 @@ package co.edu.uniquindio.clinica.controllers;
 import co.edu.uniquindio.clinica.dto.LoginDTO;
 import co.edu.uniquindio.clinica.dto.MensajeDTO;
 import co.edu.uniquindio.clinica.dto.TokenDTO;
+import co.edu.uniquindio.clinica.dto.administrador.RegistroMedicoDTO;
 import co.edu.uniquindio.clinica.dto.paciente.RegistroPacienteDTO;
+import co.edu.uniquindio.clinica.services.interfaces.AdministradorServices;
 import co.edu.uniquindio.clinica.services.interfaces.AutenticacionServices;
 import co.edu.uniquindio.clinica.services.interfaces.PacienteServices;
 import jakarta.validation.Valid;
@@ -20,11 +22,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class AutenticacionController {
     private final AutenticacionServices autenticacionService;
     private final PacienteServices pacienteService;
+    private final AdministradorServices administradorServices;
     @PostMapping("/login")
     public ResponseEntity<MensajeDTO<TokenDTO>> login(@Valid @RequestBody LoginDTO loginDTO)
             throws Exception {
         TokenDTO tokenDTO = autenticacionService.login(loginDTO);
         return ResponseEntity.ok().body(new MensajeDTO<>(false, tokenDTO));
+    }
+    @PostMapping("/crearMedico")
+    public ResponseEntity<MensajeDTO<Integer>> crearMedico(@Valid @RequestBody RegistroMedicoDTO medico) throws Exception{
+        return ResponseEntity.ok().body( new MensajeDTO<>(false, administradorServices.crearMedico(medico)));
     }
 
     @PostMapping("/registrar")
