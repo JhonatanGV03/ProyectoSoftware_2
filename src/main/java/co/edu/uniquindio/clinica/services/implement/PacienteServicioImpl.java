@@ -64,6 +64,7 @@ public class PacienteServicioImpl implements PacienteServices {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String passwordEncriptada = passwordEncoder.encode( pacienteDTO.password() );
         paciente.setPassword( passwordEncriptada );
+        paciente.setEstado(EstadoUsuario.ACTIVO);
 
         Paciente pacienteNuevo = pacienteRepo.save(paciente);
 
