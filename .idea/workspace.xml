@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Creacion del servicio de clinica para los enum">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_09_2023_12_09_p__m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_12_09_a__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_10_2023_12_09_a__m___Changes_.xml" afterDir="false" />
+    <list default="true" id="eaf5babd-f94c-4afa-86b8-fd5c4997e1d6" name="Changes" comment="Corrección de bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/PacienteServicioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/services/implement/PacienteServicioImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/controllers/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/utils/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/clinica/utils/JWTUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -297,7 +295,11 @@
       <workItem from="1699104755411" duration="2825000" />
       <workItem from="1699203619819" duration="15090000" />
       <workItem from="1699239217604" duration="688000" />
-      <workItem from="1699288139614" duration="714000" />
+      <workItem from="1699288139614" duration="1032000" />
+      <workItem from="1699289229039" duration="2967000" />
+      <workItem from="1699384301259" duration="3401000" />
+      <workItem from="1699392729970" duration="181000" />
+      <workItem from="1699397714222" duration="1707000" />
     </task>
     <task id="LOCAL-00001" summary="Modificacion de los enums">
       <created>1696564688987</created>
@@ -321,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699203682030</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Corrección de bugs">
+      <option name="closed" value="true" />
+      <created>1699289146506</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699289146506</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +353,7 @@
     <MESSAGE value="Modificacion de los enums" />
     <MESSAGE value="Creacion del test" />
     <MESSAGE value="Creacion del servicio de clinica para los enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion del servicio de clinica para los enum" />
+    <MESSAGE value="Corrección de bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrección de bugs" />
   </component>
 </project>

@@ -20,7 +20,7 @@ import java.util.List;
 public class PacienteController {
     private final PacienteServices pacienteService;
 
-    @GetMapping("/detalles/{codigoPaciente}")
+    @GetMapping("/detalle/{codigoPaciente}")
     public ResponseEntity<MensajeDTO<DetallePacienteDTO>> verDetallePaciente(@PathVariable int codigoPaciente) throws Exception{
         return ResponseEntity.ok().body(new MensajeDTO<>(false, pacienteService.verDetallePaciente(codigoPaciente)));
     }
