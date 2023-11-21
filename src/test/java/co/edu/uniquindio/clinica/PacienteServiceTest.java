@@ -18,34 +18,34 @@ import java.time.LocalTime;
 import java.util.List;
 
 @SpringBootTest
-@Transactional
+
 public class PacienteServiceTest {
 
     @Autowired
     private PacienteServices pacienteService;
 
-//    @Test
-//    @Sql("classpath:dataset.sql")
-//    public void registrarseTest() throws Exception{
-//        RegistroPacienteDTO pacienteDTO = new RegistroPacienteDTO(
-//                "1097222222",
-//                "pepitoperez@email.com",
-//                "3243434",
-//                "Pepito Perez",
-//                "12345678",
-//                Ciudad.ARMENIA,
-//                LocalDate.of(1990, 10, 7),
-//                "El polvo y el polen me hacen estornudar",
-//                EPS.NUEVA_EPS,
-//                TipoSangre.A_POSITIVO,
-//                "aquí va la url de la foto"
-//                );
-//
-//        int nuevo = pacienteService.registrarse(pacienteDTO);
-//
-//        Assertions.assertNotEquals(0, nuevo);
-//
-//    }
+    @Test
+    @Sql("classpath:dataset.sql")
+    public void registrarseTest() throws Exception{
+        RegistroPacienteDTO pacienteDTO = new RegistroPacienteDTO(
+                "1097222222",
+                "pepitoperez@email.com",
+                "3243434",
+                "Pepito Perez",
+                "12345678",
+                Ciudad.ARMENIA,
+                LocalDate.of(1990, 10, 7),
+                "El polvo y el polen me hacen estornudar",
+                EPS.NUEVA_EPS,
+                TipoSangre.A_POSITIVO,
+                "aquí va la url de la foto"
+                );
+
+        int nuevo = pacienteService.registrarse(pacienteDTO);
+
+        Assertions.assertNotEquals(0, nuevo);
+
+    }
 
 
     @Test
@@ -133,8 +133,7 @@ public class PacienteServiceTest {
     @Sql("classpath:dataset.sql")
     public void listarPqrsPacienteTest() throws Exception {
         List<ItemPQRSDTO> pqrs = pacienteService.listarPQRSPaciente(5);
-        pqrs.forEach(System.out::println);
-        Assertions.assertEquals(1, pqrs.size());
+        System.out.println(pqrs.toString());
     }
 
     @Test

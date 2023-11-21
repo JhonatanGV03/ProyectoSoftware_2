@@ -11,7 +11,7 @@ public record RegistroRespuestaDTO(
         @Positive
         int codPqrs,
         @Positive
-        int codMensaje,
+        int codMensaje, //Deberia crearse automatico
         @NotBlank @Length(max = 500)
         String mensaje
 ){

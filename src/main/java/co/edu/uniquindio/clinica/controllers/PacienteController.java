@@ -20,7 +20,7 @@ import java.util.List;
 public class PacienteController {
     private final PacienteServices pacienteService;
 
-    @GetMapping("/detalle/{codigoPaciente}")
+    @GetMapping("/detalles/{codigoPaciente}")
     public ResponseEntity<MensajeDTO<DetallePacienteDTO>> verDetallePaciente(@PathVariable int codigoPaciente) throws Exception{
         return ResponseEntity.ok().body(new MensajeDTO<>(false, pacienteService.verDetallePaciente(codigoPaciente)));
     }
@@ -42,7 +42,7 @@ public class PacienteController {
         return ResponseEntity.ok().body(new MensajeDTO<>(false, pacienteService.listarPacientes()));
     }
 
-    @PutMapping("/cambiar-password")
+    @PutMapping("/cambiar-password") //Se debe cambiar?
     public ResponseEntity<MensajeDTO<String>> cambiarPassword(@Valid @RequestBody NewPasswordDTO newPasswordDTO) throws Exception{
         pacienteService.cambiarPassword(newPasswordDTO);
         return ResponseEntity.ok().body(new MensajeDTO<>(false, "Contraseña modificada correctamente"));
@@ -64,7 +64,7 @@ public class PacienteController {
         return ResponseEntity.ok().body(new MensajeDTO<>(false, pacienteService.verDetallesPQRS(codigo)));
     }
 
-    @PostMapping("/responder-pqrs") //Puede ser put
+    @PostMapping("/responder-pqrs")
     public ResponseEntity<MensajeDTO<String>> responderPQRS(@Valid @RequestBody RegistroRespuestaDTO registroRespuestaDTO) throws Exception{
         pacienteService.responderPQRS(registroRespuestaDTO);
         return ResponseEntity.ok().body(new MensajeDTO<>(false, "Respuesta registrada correctamente"));
@@ -86,7 +86,7 @@ public class PacienteController {
         return ResponseEntity.ok().body(new MensajeDTO<>(false, pacienteService.listarCitasPaciente(codigoPaciente)));
     }
 
-    @GetMapping("detalles-consulta/{codigo}")
+    @GetMapping("/detalles-consulta/{codigo}")
     public ResponseEntity<MensajeDTO<DetallesConsultaDTO>> verDetalleConsulta(@PathVariable int codigo) throws Exception{
         return ResponseEntity.ok().body(new MensajeDTO<>(false, pacienteService.verDetalleConsulta(codigo)));
     }

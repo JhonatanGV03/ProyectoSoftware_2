@@ -17,9 +17,9 @@ public record RegistroCitaDTO(
         Especialidad especialidad,
         @Positive
         int codigoMedico,
-        @NotEmpty
+        @NotNull
         LocalDate fecha,
-        @NotEmpty
+        @NotNull
         LocalTime hora,
         @NotBlank @Length(max = 500)
         String motivoConsulta

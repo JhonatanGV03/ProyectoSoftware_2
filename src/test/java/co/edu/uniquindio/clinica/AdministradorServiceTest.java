@@ -31,7 +31,7 @@ public class AdministradorServiceTest {
     public void crearMedicoTest() {
 
         List<HorarioDTO> horarios = new ArrayList<>();
-        //horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
+        horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
 
         RegistroMedicoDTO medicoDTO = new RegistroMedicoDTO(
                 "Paco Perez",
@@ -57,7 +57,7 @@ public class AdministradorServiceTest {
     @Sql("classpath:dataset.sql" )
     public void actualizarMedicoTest() {
         List<HorarioDTO> horarios = new ArrayList<>();
-        //horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
+        horarios.add(new HorarioDTO("LUNES", LocalTime.of(7, 0, 0), LocalTime.of(14, 0, 0)));
 
         DetallesMedicoDTO medicoDTO = new DetallesMedicoDTO(
                 8,
@@ -161,8 +161,8 @@ public class AdministradorServiceTest {
             //Ver el estado inicial de la pqrs
             DetallesPQRSAdminDTO pqrsi = administradorServicio.verDetallesPQRS(2);
             System.out.println(pqrsi.toString());
-
-            administradorServicio.cambiarEstadoPQRS(2, EstadoPQRS.RESUELTO);
+            EstadoPQRSDTO estadoPQRS = new EstadoPQRSDTO(EstadoPQRS.EN_PROCESO);
+            administradorServicio.cambiarEstadoPQRS(2, estadoPQRS);
 
             //Ver el estado final de la pqrs
             DetallesPQRSAdminDTO pqrs = administradorServicio.verDetallesPQRS(2);
@@ -177,7 +177,7 @@ public class AdministradorServiceTest {
     @Sql("classpath:dataset.sql" )
     public void listarCitasTest() {
         try {
-            List<ItemCitaAdminDTO> citas = administradorServicio.listarCitas();
+            List<ItemCitaAdminDTO> citas = administradorServicio.listarCitas(4);
             System.out.println(citas.toString());
             Assertions.assertNotEquals(0, citas.size()); // Verifica que la lista no este vacia.
         } catch (Exception e) {

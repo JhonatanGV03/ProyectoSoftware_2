@@ -10,6 +10,7 @@ import java.util.List;
 public interface AdministradorServices {
 
     void crearAdmin(RegistroAdminDTO admin) throws Exception;
+
     int crearMedico(RegistroMedicoDTO medico) throws Exception;
 
     int actualizarmedico(DetallesMedicoDTO medicoDTO) throws Exception;
@@ -25,8 +26,8 @@ public interface AdministradorServices {
 
     int responderPQRS(RegistroRespuestaDTO registroRespuesta) throws Exception;
 
-    void cambiarEstadoPQRS(int codigoPQRS, EstadoPQRS estadoPQRS) throws Exception;
-    List<ItemCitaAdminDTO> listarCitas() throws Exception;
+    void cambiarEstadoPQRS(int codigoPQRS, EstadoPQRSDTO estadoPQRS) throws Exception;
+    List<ItemCitaAdminDTO> listarCitas(int codigoMedico) throws Exception;
 
 
 }

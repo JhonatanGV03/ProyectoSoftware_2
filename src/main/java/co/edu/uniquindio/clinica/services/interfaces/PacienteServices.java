@@ -16,6 +16,7 @@ public interface PacienteServices {
     int editarPerfil(DetallePacienteDTO pacienteDTO) throws Exception;
 
     void eliminarCuenta(int codigoPaciente) throws Exception;
+
     List<ItemPacienteDTO> listarPacientes();
 
     void cambiarPassword(NewPasswordDTO newPasswordDTO) throws Exception;

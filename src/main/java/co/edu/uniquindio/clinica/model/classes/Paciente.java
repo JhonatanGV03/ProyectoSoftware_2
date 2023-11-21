@@ -24,8 +24,9 @@ import java.util.List;
 @Setter
 public class Paciente extends Usuario implements Serializable {
     //Atributos
+    @Past
     @Column(nullable = false)
-    private String fechaNacimiento;
+    private LocalDate fechaNacimiento;
     @Column(nullable = false, length = 250)
     private String alergias;
 

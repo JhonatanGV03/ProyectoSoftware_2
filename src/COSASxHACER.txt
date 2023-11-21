@@ -1,0 +1,5 @@
+BACKEND:
+- Crear los test de los servicios - Falta los de externos
+- Revisar los metodos de recodatorio de citas
+
+FRONTEND:

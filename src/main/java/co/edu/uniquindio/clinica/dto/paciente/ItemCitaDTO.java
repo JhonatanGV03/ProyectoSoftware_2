@@ -13,9 +13,9 @@ import java.time.LocalTime;
 public record ItemCitaDTO(
         @Positive
         int codigo,
-        @NotEmpty
+        @NotNull
         LocalDate fecha,
-        @NotEmpty
+        @NotNull
         LocalTime hora,
         @NotNull
         Especialidad especialidad,

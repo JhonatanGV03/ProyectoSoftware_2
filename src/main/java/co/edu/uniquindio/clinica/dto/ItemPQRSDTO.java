@@ -20,6 +20,6 @@ public record ItemPQRSDTO(
         @NotNull
         EstadoPQRS estadoPQRS,
         @NotBlank @Length(max = 100)
-        String nomPaciente
+        String motivo
 ){
 }

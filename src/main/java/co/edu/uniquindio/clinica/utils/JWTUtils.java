@@ -14,13 +14,22 @@ import java.util.Map;
 public class JWTUtils {
     @Value("${jwt.secret}")
     private String claveSecreta;
-    public String generarToken(String email, Map<String, Object> claims){
+
+    public String generarToken(String email, Map map){
+        return crear(email, map, 1);
+    }
+
+    public String generateRefreshToken(String email, Map map){
+        return crear(email, map, 5);
+    }
+
+    private String crear(String email, Map<String, Object> claims, int tiempo){
         Instant now = Instant.now();
         return Jwts.builder()
                 .addClaims(claims)
                 .setSubject(email)
                 .setIssuedAt(Date.from(now))
-                .setExpiration(Date.from(now.plus(5L, ChronoUnit.DAYS)))
+                .setExpiration(Date.from(now.plus(tiempo, ChronoUnit.DAYS)))
                 .signWith( getKey() )
                 .compact();
 

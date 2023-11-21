@@ -27,6 +27,6 @@ public record DetallesMedicoDTO(
         @NotBlank
         String urlFoto,
         @NotEmpty
-        List<HorarioDTO> horario_dto
+        List<HorarioDTO> horarios
 ) {
 }

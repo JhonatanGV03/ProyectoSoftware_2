@@ -20,23 +20,24 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
 public class AutenticacionController {
+
+    /*
+    MONTAR EL SERVICIO DE refreshToken
+     */
+
     private final AutenticacionServices autenticacionService;
     private final PacienteServices pacienteService;
-    private final AdministradorServices administradorServices;
     @PostMapping("/login")
     public ResponseEntity<MensajeDTO<TokenDTO>> login(@Valid @RequestBody LoginDTO loginDTO)
             throws Exception {
         TokenDTO tokenDTO = autenticacionService.login(loginDTO);
         return ResponseEntity.ok().body(new MensajeDTO<>(false, tokenDTO));
     }
-    @PostMapping("/crearMedico")
-    public ResponseEntity<MensajeDTO<Integer>> crearMedico(@Valid @RequestBody RegistroMedicoDTO medico) throws Exception{
-        return ResponseEntity.ok().body( new MensajeDTO<>(false, administradorServices.crearMedico(medico)));
-    }
 
-    @PostMapping("/registrar")
+    @PostMapping("/registrarse")
     public ResponseEntity<MensajeDTO<String>> registrarse(@Valid @RequestBody RegistroPacienteDTO paciente) throws Exception{
         pacienteService.registrarse(paciente);
         return ResponseEntity.ok().body( new MensajeDTO<>(false, "Paciente registrado correctamente"));
     }
+
 }

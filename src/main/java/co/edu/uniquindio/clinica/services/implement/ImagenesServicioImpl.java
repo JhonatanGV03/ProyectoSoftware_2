@@ -15,13 +15,12 @@ import java.util.Map;
 @Service
 public class ImagenesServicioImpl implements ImagenesServices {
 
-    //PARTE DE LA HISTORIA DE REGISTRO PACIENTE 20
     private final Cloudinary cloudinary;
     public ImagenesServicioImpl(){
         Map<String, String> config = new HashMap<>();
-        config.put("cloud_name", "dajjxjv8u");
-        config.put("api_key", "624628498664991");
-        config.put("api_secret", "zSr92NQBos5QAEImESbgA7vqEk8");
+        config.put("cloud_name", "dxtwyhzgi");
+        config.put("api_key", "719765785424597");
+        config.put("api_secret", "_URTjnQOCWUudEuUY3w8wLlCV7s");
         cloudinary = new Cloudinary(config);
     }
 
@@ -31,7 +30,7 @@ public class ImagenesServicioImpl implements ImagenesServices {
 
         return cloudinary.uploader().upload(file, ObjectUtils.asMap("folder",
 
-                "projectClinica"));
+                "clinica/fotos"));
     }
     @Override
     public Map eliminarImagen(String idImagen) throws Exception {

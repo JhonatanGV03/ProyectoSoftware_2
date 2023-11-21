@@ -32,70 +32,70 @@ public class FiltroToken extends OncePerRequestFilter {
             String token = getToken(req);
             boolean error = true;
 
-        try{
-            if (requestURI.startsWith("/api/pacientes") || requestURI.startsWith("/api/medicos")
+            try{
+                if (requestURI.startsWith("/api/pacientes") || requestURI.startsWith("/api/medicos")
 
-                    || requestURI.startsWith("/api/admins") ) {
-                if(token != null) {
-                    Jws<Claims> jws = jwtUtils.parseJwt(token);
-                    if (
-                            ( requestURI.startsWith("/api/pacientes") &&
+                        || requestURI.startsWith("/api/admin") ) {
+                    if(token != null) {
+                        Jws<Claims> jws = jwtUtils.parseJwt(token);
+                        if (
+                                ( requestURI.startsWith("/api/pacientes") &&
 
-                                    !jws.getBody().get("rol").equals("paciente") ) ||
+                                        !jws.getBody().get("rol").equals("paciente") ) ||
 
-                                    ( requestURI.startsWith("/api/medicos") &&
+                                        ( requestURI.startsWith("/api/medicos") &&
 
-                                            !jws.getBody().get("rol").equals("medico") ) ||
+                                                !jws.getBody().get("rol").equals("medico") ) ||
 
-                                    ( requestURI.startsWith("/api/admins") &&
+                                        ( requestURI.startsWith("/api/admin") &&
 
-                                            !jws.getBody().get("rol").equals("admin") )) {
+                                                !jws.getBody().get("rol").equals("admin") )) {
 
-                        crearRespuestaError("No tiene los permisos para acceder a este recurso",
+                            crearRespuestaError("No tiene los permisos para acceder a este recurso",
 
-                                HttpServletResponse.SC_FORBIDDEN, res);
+                                    HttpServletResponse.SC_FORBIDDEN, res);
 
+                        }else{
+                            error = false;
+                        }
                     }else{
-                        error = false;
+                        crearRespuestaError("No hay un Token", HttpServletResponse.SC_FORBIDDEN,
+
+                                res);
+
                     }
                 }else{
-                    crearRespuestaError("No hay un Token", HttpServletResponse.SC_FORBIDDEN,
-
-                            res);
-
+                    error = false;
                 }
-            }else{
-                error = false;
-            }
-        }catch (MalformedJwtException | SignatureException e){
-            crearRespuestaError("El token es incorrecto",
-                    HttpServletResponse.SC_INTERNAL_SERVER_ERROR, res);
-        }catch (ExpiredJwtException e ){
-            crearRespuestaError("El token está vencido",
-                    HttpServletResponse.SC_INTERNAL_SERVER_ERROR, res);
-        }catch (Exception e){
-            crearRespuestaError(e.getMessage(), HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
+            }catch (MalformedJwtException | SignatureException e){
+                crearRespuestaError("El token es incorrecto",
+                        HttpServletResponse.SC_INTERNAL_SERVER_ERROR, res);
+            }catch (ExpiredJwtException e ){
+                crearRespuestaError("El token está vencido",
+                        HttpServletResponse.SC_INTERNAL_SERVER_ERROR, res);
+            }catch (Exception e){
+                crearRespuestaError(e.getMessage(), HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
 
-                    res);
+                        res);
+            }
+            if(!error){
+                filterChain.doFilter(req, res);
+            }
         }
-        if(!error){
-            filterChain.doFilter(req, res);
+    }
+        private String getToken (HttpServletRequest req){
+            String header = req.getHeader("Authorization");
+            if (header != null && header.startsWith("Bearer "))
+                return header.replace("Bearer ", "");
+            return null;
         }
-    }
-    }
-    private String getToken(HttpServletRequest req) {
-        String header = req.getHeader("Authorization");
-        if(header != null && header.startsWith("Bearer "))
-            return header.replace("Bearer ", "");
-        return null;
-    }
-    private void crearRespuestaError(String mensaje, int codigoError, HttpServletResponse
-            response) throws IOException {
-        MensajeDTO<String> dto = new MensajeDTO<>(true, mensaje);
-        response.setContentType("application/json");
-        response.setStatus(codigoError);
-        response.getWriter().write(new ObjectMapper().writeValueAsString(dto));
-        response.getWriter().flush();
-        response.getWriter().close();
-    }
+        private void crearRespuestaError (String mensaje,int codigoError, HttpServletResponse
+        response) throws IOException {
+            MensajeDTO<String> dto = new MensajeDTO<>(true, mensaje);
+            response.setContentType("application/json");
+            response.setStatus(codigoError);
+            response.getWriter().write(new ObjectMapper().writeValueAsString(dto));
+            response.getWriter().flush();
+            response.getWriter().close();
+        }
 }

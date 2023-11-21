@@ -19,6 +19,11 @@ import java.util.List;
 public class AdministradorController {
     private final AdministradorServices administradorService;
 
+    @PostMapping("/crearMedico")
+    public ResponseEntity<MensajeDTO<Integer>> crearMedico(@Valid @RequestBody RegistroMedicoDTO medico) throws Exception{
+        return ResponseEntity.ok().body( new MensajeDTO<>(false, administradorService.crearMedico(medico)));
+    }
+
     //Autenticacion¿?
     @PostMapping("/crearAdmin")
     public ResponseEntity<MensajeDTO<String>> crearAdmin(@Valid @RequestBody RegistroAdminDTO admin) throws Exception{
@@ -27,13 +32,7 @@ public class AdministradorController {
     }
 
     //Autenticacion¿?
-    @PostMapping("/crearMedico")
-    public ResponseEntity<MensajeDTO<Integer>> crearMedico(@Valid @RequestBody RegistroMedicoDTO medico) throws Exception{
-        return ResponseEntity.ok().body( new MensajeDTO<>(false, administradorService.crearMedico(medico)));
-    }
-
-    //Autenticacion¿?
-    @PutMapping("/actualizarMedico")
+    @PutMapping("/actualizarMedico") //Deberia haber un codigo como parametro y la url deberia ser "actualizarMedico{codigo}"
     public ResponseEntity<MensajeDTO<Integer>> actualizarmedico(@Valid @RequestBody DetallesMedicoDTO medicoDTO) throws Exception{
         return ResponseEntity.ok().body( new MensajeDTO<>(false, administradorService.actualizarmedico(medicoDTO)));
     }
@@ -52,7 +51,6 @@ public class AdministradorController {
     public ResponseEntity<MensajeDTO<DetallesMedicoDTO>> obtenerMedico(@PathVariable int codigo) throws Exception{
         return ResponseEntity.ok().body(new MensajeDTO<>(false, administradorService.obtenerMedico(codigo)));
     }
-
     @GetMapping("/listarPQRS")
     public ResponseEntity<MensajeDTO<List<ItemPQRSDTO>>> listarPQRS() throws Exception{
         return ResponseEntity.ok().body(new MensajeDTO<>(false, administradorService.listarPQRS()));
@@ -68,13 +66,13 @@ public class AdministradorController {
     }
 
     @PutMapping("/cambiarEstadoPQRS/{codigoPQRS}")
-    public ResponseEntity<MensajeDTO<String>> cambiarEstadoPQRS(@PathVariable int codigoPQRS,@Valid @RequestBody EstadoPQRS estadoPQRS) throws Exception{
+    public ResponseEntity<MensajeDTO<String>> cambiarEstadoPQRS(@PathVariable int codigoPQRS,@Valid @RequestBody EstadoPQRSDTO estadoPQRS) throws Exception{
         administradorService.cambiarEstadoPQRS(codigoPQRS,estadoPQRS);
         return ResponseEntity.ok().body( new MensajeDTO<>(false, "Estado de PQRS modificado correctamente"));
     }
 
-    @GetMapping("/listarCitas")
-    public ResponseEntity<MensajeDTO<List<ItemCitaAdminDTO>>> listarCitas() throws Exception{
-        return ResponseEntity.ok().body(new MensajeDTO<>(false, administradorService.listarCitas()));
+    @GetMapping("/listarCitas/{codigoMedico}")
+    public ResponseEntity<MensajeDTO<List<ItemCitaAdminDTO>>> listarCitas(@PathVariable int codigoMedico) throws Exception{
+        return ResponseEntity.ok().body(new MensajeDTO<>(false, administradorService.listarCitas(codigoMedico)));
     }
 }
